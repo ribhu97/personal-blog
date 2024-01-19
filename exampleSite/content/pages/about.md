@@ -1,6 +1,6 @@
 ---
 title: 'About'
-image: images/writer.jpeg
+image: images/writer.jpg
 url: "about"
 menu:
   main:
@@ -8,44 +8,10 @@ menu:
     weight: 3
 ---
 
-## Contra vagos
+## Who am I
 
-Lorem _markdownum notam si_ lintea meque certa [en meumque
-illis](#cohibentem-iuvenaliter), diu fatigant, nec praedae concustodita arcet.
-[Paviunt castris](#nemorisque-urimur-violentus) cur errat ventis causa! Silvas
-sine satis vocat praedam moverat, precor, non sola bovis neque mihi. Primum
-utilis nympham, et certus amplexas Deiphobum palmis credas ambo, nec.
+Ribhu Lahiri. A pragmatist chasing rationality. Big words aside, I'm the co-founder of [kaksha.ai](kaksha.ai), where I lead the research. Avid reader of books, blogs, and newsletters, indie movie enjoyer, and you can find me watching the premier league (GGMU) on the weekends. 
 
-> Excidit gente, si orat suo quaeque dura Calydon nata? Pars auro post stetit
-> adfusique imis amplexus. Agmina per fabricator
-> mittere Erymanthon habetque tot.
+As a Research Engineer leading an AI-education startup, I'm committed to making AI accessible to all. In addition to running my own venture, I provide strategic consulting to other AI startups, offering practical solutions tailored to their unique needs. My work also extends to AI safety and alignment research, focusing on building safe, beneficial AI systems that align with human values. I am passionate about fostering Human-AI collaboration and envision a future powered by Augmented Intelligence. My goal is to contribute to a world where AI and humans work together to drive growth and innovation.
 
-**Cineres Nile ipsa** origine discurrunt adest Unde, et quem clausus, imo,
-virens quoque tales, potuit. Ingentes insilit corpore nutricis praebebat roganti
-licuit. Denique a vestros adulantum in bella lina parte et arte generi di igitur
-quis, digitis pedes. Cum resonant tamen, namque in anxia. Non nostri trahens
-ancora.
-
-## Ducem oculos pallor tale quoque
-
-Pectora de Hebe veste mansit nemorisque oppugnare deos, interea eo calescit
-**invita insidiae** Amymonen, semper respiciens vocato, illis! Coruscis ut somno
-hiatu Tantalides frenis nexilibus hamata limbo mentis, pacis iudicium
-auxilioque. Genus dolori, me ira hae inpediunt tellus, nascendi Boreas!
-Tangentiaque tecto et secuta recursus quo matrisque, moenia sedulitas Cyllenius
-in duxere plenaque: **hos**.
-
-1. Olim pulvere
-2. Verus ego ovantem mihi
-3. Tenuit erat semina superari
-4. Dabis natis hoc genu in quidem dumque
-
-Per tenuata [potiora](#inmeritae-discordemque-iterum) dedit caelo admota
-iniustus decipere do loca multa non parat. Ingratos his ut inde credite sensit
-sorte. Spectat cognitius tamen spem facit, et facto tecumque quae incumbere
-relictis fronde rebus! Bene haeret circumdata tunc cremantur propter iuvencos
-deus inserit sit tua. Pompa non precor procumbit inania lacrimas sacra credetis:
-Oceano, femina?
-
-Bacchantum neque. Humum ut violasse quam inmotos! Danae aera vertitur potiere
-scopuloque pecus, ut animam aversata Iovis, petentes aura, _montibus_.
+If you're still more interested, I've got the [thing](https://ribhu.notion.site/Hello-Recruiter-f575c0fcfe8a44adb0af4f924aa2fde1) for you.

@@ -1,6 +1,10 @@
 ---
-title: You don't start out writing good stuff
-description: The hallway smelt of boiled cabbage and old rag mats.
+title: Research Engineer by day
+description: Armchair sports analyst by night
 ---
 
-The hallway smelt of boiled cabbage and old rag mats. At one end of it a coloured poster, too large for indoor display, had been tacked to the wall. It depicted simply an enormous face, more than a metre wide: the face of a man of about forty-five, with a heavy black moustache and ruggedly handsome features. Winston made for the stairs. It was no use trying the lift. 
+Don't worry if you don't see a wacky terminal screen, or an over-eager "aligned" chatbot greeting you. You're probably on the right page. Choose what you want to know more about:
+
+1. [My thoughts]({{< ref "/posts" >}} "Blog")
+2. [Who I am]({{< ref "/about" >}} "About Us")
+3. [What I'm listening to](https://open.spotify.com/playlist/1WBvlXVgFTlHQRWLVEYUls?si=712eaebb08e1455e)
