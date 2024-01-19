@@ -1,6 +1,7 @@
 :root {
   --font-family-heading: 'Poppins', sans-serif;
-  --font-family-paragraph: 'Lekton', sans-serif;
+  --font-family-paragraph: 'Overpass Mono', monospace;
+  --font-family-highlight: 'Lekton', sans-serif;
   --font-family-monospace: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
@@ -27,7 +28,7 @@ $breakpoints: (
 @import 'main-menu';
 @import 'main-menu-mobile';
 @import 'pygments/github';
-@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton&family=Overpass+Mono&display=swap');
 
 html, body {
   box-sizing: border-box;
