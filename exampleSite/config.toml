@@ -14,8 +14,8 @@ pygmentsUseClasses = true
     min = "0.55.0"
 
 [params]
-  google_analytics_id = ""
-  twitter_handle = "@zerostaticio"
+  google_analytics_id = "G-X9JKVPWBWH"
+  twitter_handle = "@ribhu97"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false
