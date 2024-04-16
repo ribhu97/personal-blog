@@ -1,6 +1,6 @@
 ---
 title: "Behind the Curve: The Slow March of AI into Classrooms"
-date: 2024-02-02
+date: 2024-04-16
 description: The discrepancy between the potential impact of AI, its current limited use in the educational sphere, and the reasons behind it
 image: images/edm.jpeg
 ---
