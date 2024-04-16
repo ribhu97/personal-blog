@@ -25,7 +25,7 @@ Adding insult to injury of standardisation is the lack of reproducibility of res
 ## Public perception
 AI takes a lot of capital investment. All of the data management, labelling, model training, deployment etc. takes effort and money. VCs are investing millions in AI startups around the world, but there is one sector which is lagging behind. There was a 49% drop in investments from 2021 to 2022 in funding ed-tech startups [6], and while the numbers may have flattened out right now, thats still not great news. Add to that this one graphic. 
 
-![Graph](images/edm-graph.png)
+![Graph](https://assets-global.website-files.com/620ed79721f927c823c09714/62dd9cb397f46068fefac167_Screen-Shot-2021-01-25-at-11.11.59-am-1280x717.png)
 In general, the education industry is starved of capital. But why is that? There's 2 reasons, one more short-term, and one long-term.
 
 The short-term reason is simple. The pandemic provided a boom of online education. There was a forced move towards it, which is now being rolled back slightly. Learning quality was affected by this sudden change in delivery [7]. As more and more people go back to traditional learning settings, the investments seem to have returned to the normal rather than go on a downward trend. Add to that the perception of EdTech startups taking a hit due to examples such as Byju's, who raised billions only to make no discernible difference to the quality of education provided to its students. So investments are slower, but companies working on the real problems of education are still being supported.
