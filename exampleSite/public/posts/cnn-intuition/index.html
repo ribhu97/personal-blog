@@ -135,7 +135,7 @@
     <span class="post-meta-sep">·</span>
     <span class="post-meta-item">6 min read</span>
     <span class="post-meta-sep">·</span>
-    <span class="post-meta-item">1085 words</span>
+    <span class="post-meta-item">1099 words</span>
     <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
   </div>
 
@@ -154,6 +154,13 @@
   <div class="post-body">
     <h3 id="the-human-eye">The Human Eye</h3>
 <p>The best visual tool that man has known for most of time is the human eye. It is the primary tool used by our brain to perceive the world and make sense of it. While the <a href="https://www.ducksters.com/science/sight_and_the_eye.php">basics of the human eye</a> are explainable by optics, it is how that raw stimulus invokes imagery in our brain that confused and fascinated people for a long time. It was in the late 1950s that two professors David Hubel and Torsten Wiesel, who were experimenting by inserting electrodes in the visual cortex of a cat and observing individual neurons, made a breakthrough: <a href="https://knowingneurons.com/2014/10/29/hubel-and-wiesel-the-neural-basis-of-visual-perception/">more</a>.</p>
+<p><figure class="post-figure">
+  <img src="/images/cnn_p1.png" alt="A visual representation of the &ldquo;architecture&rdquo; of the V1 of our visual cortex">
+  
+  <figcaption class="post-figcaption"><b>fig</b> A visual representation of the &ldquo;architecture&rdquo; of the V1 of our visual cortex</figcaption>
+  
+</figure>
+</p>
 <p>They discovered that each neuron was tuned to observe only one kind of stimulus (say a straight vertical line) and only moving (or stationary) in one direction. Further they observed that the firing of neurons change as the orientation of the stimuli was changed. This understanding of each neuron as looking out for different stimuli in different orientations was later used in building convolutional neural networks.</p>
 <h3 id="convolution-the-function">Convolution: the function</h3>
 <p>Before anything else, one needs to understand why this function is used in the neural networks. To bridge that gulf of understanding, one first needs to realise that processing in the brain is mostly hierarchical. As mentioned above, we see that the visual cortex has a bunch of neurons which are tuned to detect very specific stimuli. But, how do these outputs make sense, i.e. say how can two neurons detecting a horizontal and vertical line, combine their observations to show the presence of a curved one? The answer lies in the hierarchical organization. Initially the V1 gets all the activations from the neurons detecting their stimuli, then these are sent to a different set of neurons in the same cortex to detect higher level features.</p>

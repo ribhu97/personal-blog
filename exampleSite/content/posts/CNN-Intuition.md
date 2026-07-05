@@ -11,6 +11,8 @@ image: images/cnn-1.png
 
 The best visual tool that man has known for most of time is the human eye. It is the primary tool used by our brain to perceive the world and make sense of it. While the [basics of the human eye](https://www.ducksters.com/science/sight_and_the_eye.php) are explainable by optics, it is how that raw stimulus invokes imagery in our brain that confused and fascinated people for a long time. It was in the late 1950s that two professors David Hubel and Torsten Wiesel, who were experimenting by inserting electrodes in the visual cortex of a cat and observing individual neurons, made a breakthrough: [more](https://knowingneurons.com/2014/10/29/hubel-and-wiesel-the-neural-basis-of-visual-perception/).
 
+![A visual representation of the "architecture" of the V1 of our visual cortex](/images/cnn_p1.png)
+
 They discovered that each neuron was tuned to observe only one kind of stimulus (say a straight vertical line) and only moving (or stationary) in one direction. Further they observed that the firing of neurons change as the orientation of the stimuli was changed. This understanding of each neuron as looking out for different stimuli in different orientations was later used in building convolutional neural networks.
 
 ### Convolution: the function
