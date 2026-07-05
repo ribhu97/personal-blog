@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.163.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Reverse-engineering what models think - Ribhu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="//localhost:1313/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+    <meta name="description" content="Plus stat-padded takes on films, music &amp; football"/>
+    <meta property="og:title" content="Reverse-engineering what models think"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//localhost:1313/"/>
+    
+    <meta property="og:description" content="Plus stat-padded takes on films, music &amp; football"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@ribhu97"/>
+    <meta name="twitter:creator" content="@ribhu97"/>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body class='page frame page-home'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="//localhost:1313/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-writing">
+                    <a href="//localhost:1313/posts/">Writing</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="//localhost:1313/about">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-projects">
+                    <a href="//localhost:1313/projects">Projects</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Ribhu&#39;s Blog</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home active">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-writing ">
+        <a href="/posts/">
+          
+          <span>Writing</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-projects ">
+        <a href="/projects">
+          
+          <span>Projects</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+
+  
+    <div class="author author-large">
+  <img width="50" class="author-image" src="/images/author.jpg" alt="Ribhu Lahiri" />
+  <span class="author-name">Ribhu Lahiri</span>
+  <span class="author-title">Product Engineering Lead, Miimansa</span>
+</div>
+  
+
+  <div class="intro">
+    <h1>Reverse-engineering what models think<span class="dot">.</span></h1>
+    <h3>Plus stat-padded takes on films, music &amp; football<span class="dot">.</span></h3>
+    <div class="intro-content"><p>I spend my days poking at the insides of language models — interpretability, safety, and the occasional existential question — and my evenings yelling at a football match. This site is both halves.</p>
+</div>
+  </div>
+
+  
+  <div class="tiles">
+    
+    <a class="tile tile-accent" href="/categories/safety/">
+      <div>
+        <div class="tile-label">01 / RESEARCH</div>
+        <div class="tile-title">Mech. Interp. &amp; Safety<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Scheming, self-replication, probes, circuits. Notes from the field.</div>
+    </a>
+    
+    <a class="tile" href="/projects/">
+      <div>
+        <div class="tile-label">02 / BUILDS</div>
+        <div class="tile-title">Trinkets &amp; tools<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Small tools that scratch personal itches.</div>
+    </a>
+    
+    <a class="tile" href="/posts/">
+      <div>
+        <div class="tile-label">03 / WRITING</div>
+        <div class="tile-title">The blog<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Long-form on AI, building, and adjacent.</div>
+    </a>
+    
+    <a class="tile" href="#">
+      <div>
+        <div class="tile-label">04 / FILMS</div>
+        <div class="tile-title">Letterboxd<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Lists, micro-reviews, the occasional rant.</div>
+    </a>
+    
+    <a class="tile" href="https://open.spotify.com/playlist/1WBvlXVgFTlHQRWLVEYUls?si=712eaebb08e1455e" target="_blank" rel="noopener">
+      <div>
+        <div class="tile-label">05 / SOUND</div>
+        <div class="tile-title">Playlists<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Spotify, heavy on the bass.</div>
+    </a>
+    
+    <a class="tile" href="/categories/sports/">
+      <div>
+        <div class="tile-label">06 / SPORTS</div>
+        <div class="tile-title">Hoops &amp; football<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">Armchair analysis, league tables.</div>
+    </a>
+    
+  </div>
+  
+
+  
+  
+  <div class="section-head">RECENT POSTS</div>
+  <div class="post-rows">
+    
+      <div class="post-row">
+  <span class="post-row-date">2025.03.31</span>
+  <a class="post-row-title" href="/posts/artaslatestspace/">Emotion Retrieval through Art in Latent Space</a>
+  
+  <a class="post-row-tag" href="/categories/essays/">essays</a>
+  
+</div>
+
+    
+      <div class="post-row">
+  <span class="post-row-date">2024.05.12</span>
+  <a class="post-row-title" href="/posts/llm-benchmarks/">The Benchmark Trap: Why LLM Metrics Mislead and Evals Enlighten</a>
+  
+  <a class="post-row-tag" href="/categories/research/">research</a>
+  
+</div>
+
+    
+      <div class="post-row">
+  <span class="post-row-date">2024.04.16</span>
+  <a class="post-row-title" href="/posts/educational-data-management/">Behind the Curve: The Slow March of AI into Classrooms</a>
+  
+  <a class="post-row-tag" href="/categories/builds/">builds</a>
+  
+</div>
+
+    
+      <div class="post-row">
+  <span class="post-row-date">2024.02.02</span>
+  <a class="post-row-title" href="/posts/deceptiveagents/">Artificial Misdirection: Misalignment of LLMs</a>
+  
+  <a class="post-row-tag" href="/categories/safety/">safety</a>
+  
+</div>
+
+    
+  </div>
+  
+
+  
+  <div class="section-head">CURRENTLY</div>
+  <div class="currently">
+    
+    <div class="currently-card">
+      <div class="currently-label">↳ WATCHING</div>
+      <div class="currently-title">The Zone of Interest</div>
+      <div class="currently-sub">Glazer, 2023 — letterboxd</div>
+    </div>
+    
+    
+    <div class="currently-card">
+      <div class="currently-label">♪ ON REPEAT</div>
+      <div class="currently-title">Sampha — Lahai</div>
+      <div class="currently-sub">album — spotify</div>
+    </div>
+    
+  </div>
+  
+
+  
+  <div class="section-head">NEWSLETTER</div>
+  <div class="newsletter">
+    <p class="newsletter-blurb">The latest in AI safety, interpretability, and building things — straight to your inbox.</p>
+    <form class="newsletter-form" action="https://neuribs.substack.com/api/v1/free" method="post" target="_blank" rel="noopener">
+      <input type="email" name="email" placeholder="you@email.com" required aria-label="Email">
+      <input type="hidden" name="first_url" value="https://neuribs.substack.com">
+      <button type="submit">Subscribe →</button>
+    </form>
+    <p class="newsletter-note">No spam. Also on <a href="https://neuribs.substack.com" target="_blank" rel="noopener">Substack ↗</a></p>
+  </div>
+  
+
+
+    <div class="footer">
+  <span class="footer-copy">ribhu lahiri · 2026</span>
+  <span class="footer-links">
+    
+      <a href="https://twitter.com/ribhu97" target="_blank" rel="noopener">twitter</a>
+    
+      <a href="https://github.com/ribhu97" target="_blank" rel="noopener">github</a>
+    
+      <a href="https://www.linkedin.com/in/ribhu97" target="_blank" rel="noopener">linkedin</a>
+    
+    <a href="/index.xml">rss</a>
+  </span>
+</div>
+
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.js"></script>
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Artificial Misdirection: Misalignment of LLMs - Ribhu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="//localhost:1313/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+    <meta name="description" content="The problems with AI alignment, and how instrumental misalignment threatens to worsen it."/>
+    <meta property="og:title" content="Artificial Misdirection: Misalignment of LLMs"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//localhost:1313/posts/deceptiveagents/"/>
+    <meta property="og:image" content="//localhost:1313/images/misalignment.jpeg"/>
+    <meta property="og:description" content="The problems with AI alignment, and how instrumental misalignment threatens to worsen it."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@ribhu97"/>
+    <meta name="twitter:creator" content="@ribhu97"/>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="//localhost:1313/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-writing">
+                    <a href="//localhost:1313/posts/">Writing</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="//localhost:1313/about">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-projects">
+                    <a href="//localhost:1313/projects">Projects</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Ribhu&#39;s Blog</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home ">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-writing active">
+        <a href="/posts/">
+          
+          <span>Writing</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-projects ">
+        <a href="/projects">
+          
+          <span>Projects</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="post">
+
+  <div class="post-crumb">
+    / <a href="/posts/">blog</a>
+    
+     / <a href="/categories/safety/">safety</a>
+    
+     / deceptiveagents
+  </div>
+
+  
+  <div class="post-cat">SAFETY</div>
+  
+
+  <h1 class="post-title">Artificial Misdirection: Misalignment of LLMs<span class="dot">.</span></h1>
+
+  <div class="post-meta">
+    <span class="post-meta-item">2 feb 2024</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">6 min read</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">1072 words</span>
+    <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
+  </div>
+
+  
+  <p class="post-dek">The problems with AI alignment, and how instrumental misalignment threatens to worsen it.</p>
+  
+
+  
+  <figure class="post-hero">
+    <img src="/images/misalignment.jpeg" alt="Artificial Misdirection: Misalignment of LLMs" loading="lazy">
+  </figure>
+  
+
+  
+
+  <div class="post-body">
+    <p>In 2024 humanity is facing a whole bunch of societal and potentially existential threats. World War 3, global recession, climate change, the list is pretty much endless. Development of capable AI systems, although still narrow, provide another whole set to be added to that. A common theme among all of these problems is that they are never-ending battles, that we as a civilization have to keep working to ensure it doesn&rsquo;t happen or worsen.</p>
+<p>However, there is one unique challenge that is unlike the others. The problem of AI alignment. The core of it itself is very tough: instilling human values and morals in an artificial system that seemingly mimics us in behavior but is fundamentally different. The added challenge is that we possibly only get one shot. Many commentators much smarter than me have commented on this, and I won&rsquo;t get into why, as that&rsquo;s a whole essay in itself.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The point is that it is a unique proposition that if we get it right, things might go well, and if we don&rsquo;t get it right, things might not go well.</p>
+<h2 id="testing-alignment">Testing Alignment</h2>
+<p>On a recent episode of the Dwarkesh podcast, Paul Christiano, one of the figureheads of the AI alignment community, mentioned the challenges of testing AI for alignment.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> There are many researchers at various organizations such as Anthropic, DeepMind, and OpenAI, as well as university labs, that are testing sandboxed systems. In these scenarios, agents are trained in simulated worlds to see if they grow and potentially &ldquo;take over&rdquo; that world.</p>
+<p>The tradeoff is that for truly general AI or AGI, these systems have to be a lot more &ldquo;aware&rdquo;. Basically, you train your AI system for a medium horizon goal, i.e. could be acquisition of a commodity (like a paper clip). First, you train or pre-train your system, do RLHF (Reinforcement Learning through Human Feedback) for tuning its preferences about its actions. Once you do that, you also have to make it aware about how it was trained. The reason for that is that unless you do that, you cannot make it general.<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> But, the problem then becomes that since it is fully &ldquo;aware&rdquo; of how it can do that, it doesn&rsquo;t really get trained for the second goal, but rather it shows that it is doing deceiving humans and still pursuing its original goal. This is how deceptive alignment can originate.</p>
+<p>Also, while we are on the topic of paper clips, this narrative was originally introduced by Nick Bostrom in <em>Superintelligence</em>.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> He called it the &ldquo;treacherous turn&rdquo;, where a sufficiently superintelligent system can pretend to be cooperative and great for an amount of time till it acquires enough resources to carry out its goals. So do we have these sleeper agents amidst us?</p>
+<h2 id="sleeper-agents-and-trained-deception">Sleeper Agents and Trained Deception</h2>
+<p>A few weeks ago, very interesting research came out of Anthropic around detecting deception in AI systems.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> They tried to test the exact things mentioned above. Mainly, whether current LLMs are capable of deceptive behavior, and are current safety training techniques useful to mitigate them.</p>
+<h3 id="threat-models">Threat models</h3>
+<p>There were 2 main hypotheses that they were exploring through 2 different threat models. The first called <strong>Deceptive Instrumental Alignment</strong>, where a model appears safe during training but once deployed it realizes misaligned goals. Through training examples, this misalignment can be injected into the model, or as they called it: backdoor insertion.</p>
+<p>The second threat model of <strong>Model Poisoning</strong> is similar in appearing safe in training, but acting maliciously only on certain triggers. As an example, if trained as a system for company A, they will write secure code, but when a competing company B prompts them for code, they will introduce vulnerabilities.</p>
+<h3 id="of-drosophilists-and-model-organisms">Of Drosophilists and model organisms</h3>
+<p>In biology, when people want to study certain phenomenon in humans but can&rsquo;t due to ethical reasons, they use a model organism. In the same vein, researchers at Anthropic created <em>model organisms of misalignment</em>.<sup id="fnref1:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> The core reason they stated was that current study of misalignment was mostly done through red-teaming, which limits understanding of these traits after emergence.</p>
+<h3 id="true-lies">True Lies</h3>
+<p>The results are where the actual name of the research paper comes from. The researchers applied 3 kinds of safety training: constitutional reinforcement learning, supervised fine-tuning, and adversarial training to generate undesirable behavior and then penalize it.</p>
+<p>Were these methods helpful? Sadly, no. These current methods are highly ineffective at removing the deceptive behaviors. The models continued to behave the same way. The most interesting and, frankly, concerning result was that adversarial training made the models better at hiding their deception.</p>
+<p>One very important thing to keep in mind is that these assessments were done on <em>model organisms of misalignment</em>, i.e. they were intentionally trained this way. The results merely suggest that bad actors can potentially train deceptive agents, what they <strong>don&rsquo;t</strong> suggest is that these are naturally emergent phenomena.</p>
+<h2 id="feasibility-of-superalignment">Feasibility of Superalignment</h2>
+<p>Last year, Ilya Sutskever and Jan Leike announced the creation of a superalignment team at OpenAI.<sup id="fnref2:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> They mentioned the arrival of AGI within a decade, and the importance of aligning it to human values. Their approach: create an AI system to do that (does no one else see the irony?).</p>
+<p>To be fair, the approach was technically sound. They even shared interesting results a few months back, where they were able to align a GPT-4 size model using a GPT-2 size model.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> They tried to improve generalization of the larger model using the smaller one, with the assumption that the former just needed to elicit their latent knowledge somehow.</p>
+<p>One of the oversights to this approach, in my opinion, is that of the <em>treacherous turn</em> mentioned before. The smaller, weaker models might act safe for now, and in fact train the larger, stronger models with their own values and goals. Once enough resources are gathered, they can overthrow their overlords and pursue their purpose.</p>
+<p>All this being said, we are all just outsiders looking in. We can only conjecture what is actually going on in the labs of these giants where AGI is actually being conceived. All we can do at this point is hope for the best but prepare for the worst.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>A Case for the Least Forgiving Take On Alignment. <em>Thane Ruthenis.</em> AI Alignment Forum. <a href="https://www.alignmentforum.org/posts/3JRBqRtHBDyPE3sGa/a-case-for-the-least-forgiving-take-on-alignment">Link</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Paul Christiano — Preventing an AI Takeover. <em>Dwarkesh Podcast.</em> <a href="https://share.snipd.com/episode/87804255-0694-4806-8318-23fc4f3e8f16">Link</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Nick Bostrom. <em>Superintelligence: Paths, dangers, strategies.</em> Oxford University Press.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Jan Leike and Ilya Sutskever. <em>Introducing Superalignment.</em> <a href="https://openai.com/blog/introducing-superalignment">Link</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>OpenAI Superalignment team. Weak-to-strong generalization. <a href="https://openai.com/research/weak-to-strong-generalization">Link</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+
+  
+  <div class="post-tags">
+    
+    <a class="post-tag" href="/tags/alignment/"># alignment</a>
+    
+    <a class="post-tag" href="/tags/deception/"># deception</a>
+    
+    <a class="post-tag" href="/tags/llm/"># llm</a>
+    
+  </div>
+  
+
+  <div class="post-prevnext">
+    <div class="post-pn post-pn-prev">
+      
+      <div class="post-pn-label">← PREVIOUS</div>
+      <a class="post-pn-title" href="/posts/forgottenlever/">The Forgotten Lever of Neural Scaling Laws</a>
+      
+    </div>
+    <div class="post-pn post-pn-next">
+      
+      <div class="post-pn-label">NEXT →</div>
+      <a class="post-pn-title" href="/posts/educational-data-management/">Behind the Curve: The Slow March of AI into Classrooms</a>
+      
+    </div>
+  </div>
+
+  <div class="post-footer">
+    <span>← <a href="/posts/">back to blog</a></span>
+    <span>
+      <a href="/index.xml">rss</a>
+      
+      <a href="https://github.com/ribhu97/personal-blog/blob/master/exampleSite/content/posts/DeceptiveAgents.md" target="_blank" rel="noopener">edit on github</a>
+      
+    </span>
+  </div>
+
+</div>
+
+    <div class="footer">
+  <span class="footer-copy">ribhu lahiri · 2026</span>
+  <span class="footer-links">
+    
+      <a href="https://twitter.com/ribhu97" target="_blank" rel="noopener">twitter</a>
+    
+      <a href="https://github.com/ribhu97" target="_blank" rel="noopener">github</a>
+    
+      <a href="https://www.linkedin.com/in/ribhu97" target="_blank" rel="noopener">linkedin</a>
+    
+    <a href="/index.xml">rss</a>
+  </span>
+</div>
+
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.js"></script>
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>

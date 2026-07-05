@@ -6,7 +6,9 @@
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
   </div>
   {{ .Content }}
-  {{ range .Pages }}
-    {{ .Render "summary" }}
-  {{ end }}
+  <div class="post-rows">
+    {{ range .Pages }}
+      {{ partial "post-row.html" . }}
+    {{ end }}
+  </div>
 {{ end }}

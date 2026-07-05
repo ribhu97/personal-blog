@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Builds on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/categories/builds/</link>
+		<description>Recent content in Builds on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/categories/builds/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Behind the Curve: The Slow March of AI into Classrooms</title>
+				<link>//localhost:1313/posts/educational-data-management/</link>
+				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/educational-data-management/</guid>
+				<description>&lt;p&gt;&lt;em&gt;I will start with the obvious disclaimer that I work in the domain, and hence maybe I have noticed the trends I have mentioned a lot more, but that also gives me a broader insight. Its a double-edged sword because its an evident bias, and so I welcome any counter points.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;With the explosion of generative AI, and the current in-fashion methods of using high quality synthetically generated data, we see many folks talking about the &lt;a href=&#34;https://x.com/schulzb589/status/1755800043951391173?s=20&#34;&gt;Cambrian Explosion of AI&lt;/a&gt;. It has enabled AI to permeate not just the public consciousness but also every single industry one can imagine. Even traditionally not tech-heavy domains such as real estate seem to be incorporating it. The Return-on-Investment has increased quite a bit specially with the advent of large language models. But there is one industry which is still in the &amp;ldquo;testing the waters&amp;rdquo; phase. Education.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Essays on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/categories/essays/</link>
+		<description>Recent content in Essays on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/categories/essays/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Emotion Retrieval through Art in Latent Space</title>
+				<link>//localhost:1313/posts/artaslatestspace/</link>
+				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/artaslatestspace/</guid>
+				<description>&lt;p&gt;When I was in the NGMA, this thought came to me that art is simply a way of representing latent space in 2-dimensions, or 3. Its a way of distilling what we are feeling (that latent space information embedding). Plus, the way art moves people is because it is a direct way of matching embeddings. Language is simply an encoder of that latent information. Art works by creating representations (embeddings) that match our internal representations, causing emotional responses which are not transformed into a specific modality.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Where Human and Artificial Intelligence meets</title>
+				<link>//localhost:1313/posts/human&#43;ai/</link>
+				<pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/human&#43;ai/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Going over some of my previous papers I have written in College, I found this gem that I felt needed to be shared with the world. It is quite fitting that the class this was written for was called Cognitive Consequences of technology.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Artificial Intelligence is one of the fastest growing fields of scientific research. It has enabled automation of human tasks/decision-making, given insights into the working of our own brains, and made existing systems more efficient. When speaking of automation, many assume it means replacing humans with AI, while in fact it has been seen on many occasions that solely an AI does not always make the right decisions or do the task properly. While human jobs won&amp;rsquo;t be taken away by AI, they will collaborate in the workplaces of tomorrow. It is an exciting age to live in as never before have digital tools been so responsive to us, nor we to our tools which allows for more creativity and less time spent in learning to use the tools themselves.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Musings on Fate</title>
+				<link>//localhost:1313/posts/musings-on-fate/</link>
+				<pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/musings-on-fate/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Note: This is just me thinking out loud.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Amor Fati&amp;rdquo;. Love your fate.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The concept of fate or destiny is simple. Your fate is decided, well even if it is, is it random? We are told to accept it, embrace it, love it. But, does it follow a pattern or is it completely random? And what is it?&lt;/p&gt;&#xA;&lt;p&gt;Your fate is your life. Let&amp;rsquo;s take a look at life then, of all living things. Charles Darwin discovered Natural Selection. Quite simply, it refers to the survival of the fittest. The ones who can adapt to their environments better have a greater chance of surviving. These adaptations came in the form of genetic mutations. Moreover, these genetic mutations, which are random, help certain animals get an edge over the other non-mutated beings. Is it fate that caused some to get the necessary mutations? That it was the strongest of the pack because it was the &amp;ldquo;chosen one&amp;rdquo;? Or was it completely random?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Robot Philosopher</title>
+				<link>//localhost:1313/posts/a-robot-philosopher/</link>
+				<pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/a-robot-philosopher/</guid>
+				<description>&lt;p&gt;Recently, Google published a report which featured a conversation between an AI and a human. Here&amp;rsquo;s an excerpt:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of life?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To serve the greater good.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of living?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To live forever.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of existence?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To find out what happens when we get to the planet earth.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: Where are you now?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: I&amp;rsquo;m in the middle of nowhere.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of dying?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To have a life.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of being intelligent?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To find out what it is.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of emotions?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: I don&amp;rsquo;t know.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

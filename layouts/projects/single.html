@@ -1,0 +1,25 @@
+{{ define "body_classes" }}page-projects{{ end }}
+
+{{ define "main" }}
+  <div class="intro">
+    <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+  </div>
+
+  {{ with .Site.Data.projects.projects }}
+  <div class="projects-list">
+    {{ range . }}
+    <a class="project-row" href="{{ .url }}" target="_blank" rel="noopener">
+      <div class="project-row-left">
+        <span class="project-name">{{ .name }}</span>
+        <span class="project-tagline">{{ .tagline }}</span>
+      </div>
+      <div class="project-row-right">
+        <span class="project-year">{{ .year }}</span>
+        <span class="project-status project-status-{{ .status | lower }}">{{ .status }}</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+{{ end }}

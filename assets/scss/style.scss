@@ -1,14 +1,18 @@
 :root {
-  --font-family-heading: 'Poppins', sans-serif;
-  --font-family-paragraph: 'Overpass Mono', monospace;
-  --font-family-content: 'Cormorant', serif;
-  --font-family-highlight: 'Lekton', sans-serif;
-  --font-family-monospace: monospace;
+  --font-family-heading: 'Inter', system-ui, sans-serif;
+  --font-family-paragraph: 'Inter', system-ui, sans-serif;
+  --font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-family-serif: 'Source Serif 4', Georgia, serif;
+  --font-family-content: 'Source Serif 4', Georgia, serif;
+  --font-family-highlight: 'JetBrains Mono', ui-monospace, monospace;
+  --font-family-monospace: 'JetBrains Mono', ui-monospace, monospace;
   --base-color: #ffffff;
-  --base-offset-color: #eaeaea;
-  --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
-  --heading-color: #1c1b1d;
-  --text-color: #4e5157;
+  --base-offset-color: #f4f2ec;
+  --highlight-color: {{ .Site.Params.highlightColor | default "#E63946" }};
+  --heading-color: #111111;
+  --text-color: #1a1a1a;
+  --muted-color: #888888;
+  --hairline-color: #eeeeee;
 }
 
 $breakpoints: (
@@ -28,8 +32,10 @@ $breakpoints: (
 @import 'pagination';
 @import 'main-menu';
 @import 'main-menu-mobile';
-@import 'pygments/github';
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Lekton&family=Overpass+Mono&display=swap');
+@import 'tiles';
+@import 'home';
+@import 'post';
+@import 'index-lists';
 
 html, body {
   box-sizing: border-box;
@@ -42,16 +48,18 @@ body {
   margin: 0;
   padding: 20px;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
   @include breakpoint('small') {
-    padding: 50px;
+    padding: 40px;
   }
   &.frame {
     min-height: 100vh;
-    border: 18px solid var(--highlight-color);
+    border: 6px solid var(--highlight-color);
+    border-radius: 4px;
   }
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 820px;
   margin: 0 auto;
 }

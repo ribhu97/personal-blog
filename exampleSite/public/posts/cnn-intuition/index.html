@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Developing an intuition for better understanding of convolutional neural networks - Ribhu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="//localhost:1313/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+    <meta name="description" content="The Human Eye — how biological visual processing maps to CNNs."/>
+    <meta property="og:title" content="Developing an intuition for better understanding of convolutional neural networks"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//localhost:1313/posts/cnn-intuition/"/>
+    <meta property="og:image" content="//localhost:1313/images/cnn-1.png"/>
+    <meta property="og:description" content="The Human Eye — how biological visual processing maps to CNNs."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@ribhu97"/>
+    <meta name="twitter:creator" content="@ribhu97"/>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="//localhost:1313/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-writing">
+                    <a href="//localhost:1313/posts/">Writing</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="//localhost:1313/about">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-projects">
+                    <a href="//localhost:1313/projects">Projects</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Ribhu&#39;s Blog</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home ">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-writing active">
+        <a href="/posts/">
+          
+          <span>Writing</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-projects ">
+        <a href="/projects">
+          
+          <span>Projects</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="post">
+
+  <div class="post-crumb">
+    / <a href="/posts/">blog</a>
+    
+     / <a href="/categories/research/">research</a>
+    
+     / cnn-intuition
+  </div>
+
+  
+  <div class="post-cat">RESEARCH</div>
+  
+
+  <h1 class="post-title">Developing an intuition for better understanding of convolutional neural networks<span class="dot">.</span></h1>
+
+  <div class="post-meta">
+    <span class="post-meta-item">7 nov 2018</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">6 min read</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">1085 words</span>
+    <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
+  </div>
+
+  
+  <p class="post-dek">The Human Eye — how biological visual processing maps to CNNs.</p>
+  
+
+  
+  <figure class="post-hero">
+    <img src="/images/cnn-1.png" alt="Developing an intuition for better understanding of convolutional neural networks" loading="lazy">
+  </figure>
+  
+
+  
+
+  <div class="post-body">
+    <h3 id="the-human-eye">The Human Eye</h3>
+<p>The best visual tool that man has known for most of time is the human eye. It is the primary tool used by our brain to perceive the world and make sense of it. While the <a href="https://www.ducksters.com/science/sight_and_the_eye.php">basics of the human eye</a> are explainable by optics, it is how that raw stimulus invokes imagery in our brain that confused and fascinated people for a long time. It was in the late 1950s that two professors David Hubel and Torsten Wiesel, who were experimenting by inserting electrodes in the visual cortex of a cat and observing individual neurons, made a breakthrough: <a href="https://knowingneurons.com/2014/10/29/hubel-and-wiesel-the-neural-basis-of-visual-perception/">more</a>.</p>
+<p>They discovered that each neuron was tuned to observe only one kind of stimulus (say a straight vertical line) and only moving (or stationary) in one direction. Further they observed that the firing of neurons change as the orientation of the stimuli was changed. This understanding of each neuron as looking out for different stimuli in different orientations was later used in building convolutional neural networks.</p>
+<h3 id="convolution-the-function">Convolution: the function</h3>
+<p>Before anything else, one needs to understand why this function is used in the neural networks. To bridge that gulf of understanding, one first needs to realise that processing in the brain is mostly hierarchical. As mentioned above, we see that the visual cortex has a bunch of neurons which are tuned to detect very specific stimuli. But, how do these outputs make sense, i.e. say how can two neurons detecting a horizontal and vertical line, combine their observations to show the presence of a curved one? The answer lies in the hierarchical organization. Initially the V1 gets all the activations from the neurons detecting their stimuli, then these are sent to a different set of neurons in the same cortex to detect higher level features.</p>
+<p>Ok, so the various activations of one layer of neurons is passed to another — but how does the convolution function figure into all of this? Well, to detect the higher level features, the lower level features are convoluted to produce the activations in the next layer. Mathematically, a convolution function is applied to two functions to capture how the shape of one modifies the other. Put simply, imagine sliding the graph of one function over the other to &lsquo;combine&rsquo; their outputs.</p>
+<p>While it might seem quite simple, convolutions over a few layers allows the neural network (in your brain or your model) to observe really high level features such as a ball, or a beak, or even an eye.</p>
+<h3 id="the-fall-and-rise-of-neural-networks">The fall and rise of neural networks</h3>
+<p>Now that we have a rudimentary understanding of visual processing in the brain, let us move onto how things are generally processed in the brain. In the late 70s, when some connectionist models began underperforming, there was a growing restlessness in the AI community. Aided by lack of available data, low computational power and declining funding, an AI winter began. Neural networks became cool again in the 2000s, due to the internet and the onset of the information age. Powered by huge, open datasets and GPUs the neural networks started performing, and sometimes outperforming humans.</p>
+<p>At the core of it, they still contain the perceptron used extensively in the connectionist models earlier. It is a mathematical model of a human neuron — it takes some input (stimuli), performs a simple computation and returns an output (activation). In modern neural networks, multiple perceptrons comprise of a single layer of the network, and multiple layers form the network (similar to what we saw in the visual cortex). To learn more about the working of feed-forward neural networks check out this <a href="https://www.youtube.com/watch?v=p69khggr1Jo">video</a>.</p>
+<h3 id="putting-it-together">Putting it together</h3>
+<p>Not quite. Just like your ikea desk, it&rsquo;s all there but it doesn&rsquo;t quite seem to fit together. People came to the previous conclusion quite a few years back, but they were unable to create useful neural networks for visual tasks. There are two main reasons for it:</p>
+<ul>
+<li>Image data is basically pixel information. For smaller images, the input layer would be a few hundred values that get convolved over a few hundred more neurons in the next layer. But when we do the same with larger images, we see that the scale of computation keeps increasing and beyond a point becomes impractical.</li>
+<li>The layers beyond the input capture different stimuli which cannot be generalized across layers. This leads to loss of useful information, and retention of redundant information.</li>
+</ul>
+<p>The call for a better method was answered by Yann LeCun and his team of researchers when in 1989, while working in the AT&amp;T labs, they invented and applied a convolutional neural network to a handwritten digit recognition task. They came up with the idea that instead of having the n-number of weights process images fully, they would only go over slices of the images and detect each feature in those slices. Basically, imagine if each weight were a small window, and the network looks at the image through the window, sliding it over the whole of it to detect all the features it can. Not only does it drastically reduce the computation requirements, but it also makes the weights generalizable (i.e. once a feature is learned it can be applied to the same image in a different location and also in different images).</p>
+<p>These weights are often called filters, or the receptive field. Each layer of filters captures a higher-level of information, similar to the visual cortex. So one can see how we drew inspiration from the human visual processing system to come up with convolutional neural networks to improve performance and accuracy of computer vision tasks.</p>
+<p>To know a bit more about the nitty-gritties of CNNs you can check out the notes from Andrej Karpathy&rsquo;s CS231n <a href="http://cs231n.github.io/convolutional-networks/">here</a>. You can also play around with a sample network <a href="https://playground.tensorflow.org">here</a>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In the beginning we saw how the human eye worked with the brain to provide us with a stream of visual information. From detecting dots and lines by the simple cells in the earlier layers to higher level features in the later layers, the mechanism was replicated in neural networks. The method was fine-tuned later by using layers of sliding, generalizable filters instead of fully connected layers. While this gives the reader a general overlook into the workings of convolutional neural networks, there&rsquo;s many finer details that cannot be talked about without going deeper into the topic.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="http://cs231n.github.io/">CS231n Convolutional Neural Networks for Visual Recognition</a></li>
+<li><a href="https://t.co/65Ru97b9gN">Inspiration from Chris Olah&rsquo;s post on better understanding the inner workings of a CNN</a></li>
+</ul>
+
+  </div>
+
+  
+  <div class="post-tags">
+    
+    <a class="post-tag" href="/tags/cnn/"># cnn</a>
+    
+    <a class="post-tag" href="/tags/computer-vision/"># computer-vision</a>
+    
+    <a class="post-tag" href="/tags/deep-learning/"># deep-learning</a>
+    
+  </div>
+  
+
+  <div class="post-prevnext">
+    <div class="post-pn post-pn-prev">
+      
+      <div class="post-pn-label">← PREVIOUS</div>
+      <a class="post-pn-title" href="/posts/musings-on-fate/">Musings on Fate</a>
+      
+    </div>
+    <div class="post-pn post-pn-next">
+      
+      <div class="post-pn-label">NEXT →</div>
+      <a class="post-pn-title" href="/posts/human&#43;ai/">Where Human and Artificial Intelligence meets</a>
+      
+    </div>
+  </div>
+
+  <div class="post-footer">
+    <span>← <a href="/posts/">back to blog</a></span>
+    <span>
+      <a href="/index.xml">rss</a>
+      
+      <a href="https://github.com/ribhu97/personal-blog/blob/master/exampleSite/content/posts/CNN-Intuition.md" target="_blank" rel="noopener">edit on github</a>
+      
+    </span>
+  </div>
+
+</div>
+
+    <div class="footer">
+  <span class="footer-copy">ribhu lahiri · 2026</span>
+  <span class="footer-links">
+    
+      <a href="https://twitter.com/ribhu97" target="_blank" rel="noopener">twitter</a>
+    
+      <a href="https://github.com/ribhu97" target="_blank" rel="noopener">github</a>
+    
+      <a href="https://www.linkedin.com/in/ribhu97" target="_blank" rel="noopener">linkedin</a>
+    
+    <a href="/index.xml">rss</a>
+  </span>
+</div>
+
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.js"></script>
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>

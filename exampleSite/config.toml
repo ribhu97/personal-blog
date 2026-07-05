@@ -21,7 +21,9 @@ pygmentsUseClasses = true
   showPostsOnHomepage = false
   addDot = true
   addFrame = true
-  highlightColor = '#ed2939'
+  highlightColor = '#E63946'
+  github_repo = "https://github.com/ribhu97/personal-blog"
+  substack_url = "https://neuribs.substack.com"
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
@@ -31,9 +33,23 @@ pygmentsUseClasses = true
       unsafe = true
       xhtml = false
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 [menu]
   [[menu.main]]
     identifier = 'home'
     name = 'Home'
     url = '/'
     weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about'
+    weight = 3
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects'
+    weight = 4

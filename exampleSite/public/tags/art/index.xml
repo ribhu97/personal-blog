@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Art on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/art/</link>
+		<description>Recent content in Art on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/art/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Emotion Retrieval through Art in Latent Space</title>
+				<link>//localhost:1313/posts/artaslatestspace/</link>
+				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/artaslatestspace/</guid>
+				<description>&lt;p&gt;When I was in the NGMA, this thought came to me that art is simply a way of representing latent space in 2-dimensions, or 3. Its a way of distilling what we are feeling (that latent space information embedding). Plus, the way art moves people is because it is a direct way of matching embeddings. Language is simply an encoder of that latent information. Art works by creating representations (embeddings) that match our internal representations, causing emotional responses which are not transformed into a specific modality.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,20 +1,19 @@
 .footer {
-    margin-top: 30px;
-    @include breakpoint('small') {
-      padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-family-mono);
+  font-size: 11px;
+  color: var(--muted-color);
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline-color);
+  a {
+    color: var(--muted-color);
+    text-decoration: none;
+    margin-left: 12px;
+    &:hover {
+      color: var(--highlight-color);
     }
   }
-  
-  .social-icon {
-    margin-right: 10px;
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-        img {
-          opacity: 0.7;
-        }
-      }
-    }
-  }
-  
+}

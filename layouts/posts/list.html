@@ -5,10 +5,20 @@
     <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
   </div>
-  {{ .Content }}
-  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-  {{ range $paginator.Pages }}
-    {{ .Render "summary" }}
+
+  {{ with .Site.Taxonomies.categories }}
+  <div class="index-filters">
+    {{ range $cat, $pages := . }}
+    <a class="index-filter" href="{{ printf "/categories/%s/" ($cat | urlize) | relURL }}">{{ $cat | lower }}</a>
+    {{ end }}
+  </div>
   {{ end }}
+
+  <div class="post-rows">
+    {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+    {{ range $paginator.Pages }}
+      {{ partial "post-row.html" . }}
+    {{ end }}
+  </div>
   {{ partial "paginator" . }}
 {{ end }}

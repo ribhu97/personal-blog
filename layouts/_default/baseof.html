@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
 
-  {{ if .Site.IsServer }}
+  {{ if hugo.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
@@ -28,8 +28,9 @@
     {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
   {{ end }}
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
 </head>
 
 {{ $themeStyle := slice "" }}
@@ -48,7 +49,7 @@
 
   {{ $js := slice $scripts | resources.Concat "js/bundle.js" }}
 
-  {{ if .Site.IsServer }}
+  {{ if hugo.IsServer }}
   <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
   {{ else }}
   <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>

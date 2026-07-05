@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Benchmarks on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/benchmarks/</link>
+		<description>Recent content in Benchmarks on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 12 May 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/benchmarks/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Benchmark Trap: Why LLM Metrics Mislead and Evals Enlighten</title>
+				<link>//localhost:1313/posts/llm-benchmarks/</link>
+				<pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/llm-benchmarks/</guid>
+				<description>&lt;p&gt;&amp;ldquo;We have just launched our newest large language model trained with the best curated dataset with the state-of-the-art GPUs and we have improved on the MMLU by &lt;em&gt;n&lt;/em&gt; number of points, surpassing the previous best.&amp;rdquo; Does this sound familiar? Reads like a press release of an AI company releasing their shiny new LLM for the world. As the arms race heats up it was bound to happen. But there&amp;rsquo;s one big problem with this line. No, I&amp;rsquo;m not talking about the obvious x-risk with larger, uninterpretable, and unaligned models. I&amp;rsquo;m not talking about the effects on climate change due to the the emissions of data centres. I want to illustrate one issue that&amp;rsquo;s not talked about as much but is actually much easier to control and to take action on.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

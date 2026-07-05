@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Automation on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/automation/</link>
+		<description>Recent content in Automation on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Where Human and Artificial Intelligence meets</title>
+				<link>//localhost:1313/posts/human&#43;ai/</link>
+				<pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/human&#43;ai/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Going over some of my previous papers I have written in College, I found this gem that I felt needed to be shared with the world. It is quite fitting that the class this was written for was called Cognitive Consequences of technology.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Artificial Intelligence is one of the fastest growing fields of scientific research. It has enabled automation of human tasks/decision-making, given insights into the working of our own brains, and made existing systems more efficient. When speaking of automation, many assume it means replacing humans with AI, while in fact it has been seen on many occasions that solely an AI does not always make the right decisions or do the task properly. While human jobs won&amp;rsquo;t be taken away by AI, they will collaborate in the workplaces of tomorrow. It is an exciting age to live in as never before have digital tools been so responsive to us, nor we to our tools which allows for more creativity and less time spent in learning to use the tools themselves.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

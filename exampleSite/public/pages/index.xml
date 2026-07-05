@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pages on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/pages/</link>
+		<description>Recent content in Pages on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="//localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About</title>
+				<link>//localhost:1313/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/about/</guid>
+				<description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I&lt;/h2&gt;&#xA;&lt;p&gt;Ribhu Lahiri. A pragmatist chasing rationality. Big words aside, I&amp;rsquo;m the co-founder of &lt;a href=&#34;kaksha.ai&#34;&gt;kaksha.ai&lt;/a&gt;, where I lead the research. Avid reader of books, blogs, and newsletters, indie movie enjoyer, and you can find me watching the premier league (GGMU) on the weekends.&lt;/p&gt;&#xA;&lt;p&gt;As a Research Engineer leading an AI-education startup, I&amp;rsquo;m committed to making AI accessible to all. In addition to running my own venture, I provide strategic consulting to other AI startups, offering practical solutions tailored to their unique needs. My work also extends to AI safety and alignment research, focusing on building safe, beneficial AI systems that align with human values. I am passionate about fostering Human-AI collaboration and envision a future powered by Augmented Intelligence. My goal is to contribute to a world where AI and humans work together to drive growth and innovation.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Projects</title>
+				<link>//localhost:1313/projects/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/projects/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

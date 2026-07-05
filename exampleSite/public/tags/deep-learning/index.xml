@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Deep-Learning on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/deep-learning/</link>
+		<description>Recent content in Deep-Learning on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Developing an intuition for better understanding of convolutional neural networks</title>
+				<link>//localhost:1313/posts/cnn-intuition/</link>
+				<pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/cnn-intuition/</guid>
+				<description>&lt;h3 id=&#34;the-human-eye&#34;&gt;The Human Eye&lt;/h3&gt;&#xA;&lt;p&gt;The best visual tool that man has known for most of time is the human eye. It is the primary tool used by our brain to perceive the world and make sense of it. While the &lt;a href=&#34;https://www.ducksters.com/science/sight_and_the_eye.php&#34;&gt;basics of the human eye&lt;/a&gt; are explainable by optics, it is how that raw stimulus invokes imagery in our brain that confused and fascinated people for a long time. It was in the late 1950s that two professors David Hubel and Torsten Wiesel, who were experimenting by inserting electrodes in the visual cortex of a cat and observing individual neurons, made a breakthrough: &lt;a href=&#34;https://knowingneurons.com/2014/10/29/hubel-and-wiesel-the-neural-basis-of-visual-perception/&#34;&gt;more&lt;/a&gt;.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "PersonaForge",
+      "tagline": "Generate rich, consistent AI personas for your projects.",
+      "url": "https://personaforge.pehloo.xyz",
+      "year": 2024,
+      "status": "live"
+    }
+  ]
+}
