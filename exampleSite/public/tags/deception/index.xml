@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Deception on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/deception/</link>
+		<description>Recent content in Deception on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/deception/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Artificial Misdirection: Misalignment of LLMs</title>
+				<link>//localhost:1313/posts/deceptiveagents/</link>
+				<pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/deceptiveagents/</guid>
+				<description>&lt;p&gt;In 2024 humanity is facing a whole bunch of societal and potentially existential threats. World War 3, global recession, climate change, the list is pretty much endless. Development of capable AI systems, although still narrow, provide another whole set to be added to that. A common theme among all of these problems is that they are never-ending battles, that we as a civilization have to keep working to ensure it doesn&amp;rsquo;t happen or worsen.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

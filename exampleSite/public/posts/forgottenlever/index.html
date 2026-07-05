@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Forgotten Lever of Neural Scaling Laws - Ribhu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="//localhost:1313/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+    <meta name="description" content="How Data Quality can be leveraged in the era of LLMs, and how people often overlook it when talking about scaling laws"/>
+    <meta property="og:title" content="The Forgotten Lever of Neural Scaling Laws"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="//localhost:1313/posts/forgottenlever/"/>
+    <meta property="og:image" content="//localhost:1313/images/scaling_mountain.jpeg"/>
+    <meta property="og:description" content="How Data Quality can be leveraged in the era of LLMs, and how people often overlook it when talking about scaling laws"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@ribhu97"/>
+    <meta name="twitter:creator" content="@ribhu97"/>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="menu-main-mobile" class="menu-main-mobile">
+    <ul class="menu">
+        
+        
+            
+                <li class="menu-item-home">
+                    <a href="//localhost:1313/">Home</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-writing">
+                    <a href="//localhost:1313/posts/">Writing</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-about">
+                    <a href="//localhost:1313/about">About</a>
+                </li>
+            
+        
+            
+                <li class="menu-item-projects">
+                    <a href="//localhost:1313/projects">Projects</a>
+                </li>
+            
+        
+    </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="/">Ribhu&#39;s Blog</a>
+  <div class="menu-main">
+    <ul>
+      
+      
+      
+      
+      <li class="menu-item-home ">
+        <a href="/">
+          
+          <span>Home</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-writing active">
+        <a href="/posts/">
+          
+          <span>Writing</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-about ">
+        <a href="/about">
+          
+          <span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li class="menu-item-projects ">
+        <a href="/projects">
+          
+          <span>Projects</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
+    
+<div class="post">
+
+  <div class="post-crumb">
+    / <a href="/posts/">blog</a>
+    
+     / <a href="/categories/research/">research</a>
+    
+     / forgottenlever
+  </div>
+
+  
+  <div class="post-cat">RESEARCH</div>
+  
+
+  <h1 class="post-title">The Forgotten Lever of Neural Scaling Laws<span class="dot">.</span></h1>
+
+  <div class="post-meta">
+    <span class="post-meta-item">19 jan 2024</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">6 min read</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">1066 words</span>
+    <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
+  </div>
+
+  
+  <p class="post-dek">How Data Quality can be leveraged in the era of LLMs, and how people often overlook it when talking about scaling laws</p>
+  
+
+  
+  <figure class="post-hero">
+    <img src="/images/scaling_mountain.jpeg" alt="The Forgotten Lever of Neural Scaling Laws" loading="lazy">
+  </figure>
+  
+
+  
+
+  <div class="post-body">
+    <p>While driving a few weeks back, I was listening to a podcast (Cognitive Revolution) episode where the Perplexity CEO, Aravind Srinivas was talking about moats in the AI space.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> One of the things he mentioned really stuck out to me.</p>
+<blockquote>
+<p>Everybody&rsquo;s building their index because I think in the world where large language models are commodity and the training recipe for them or the weights are just right on their open source, the edge goes to the data markets (&hellip;) You don&rsquo;t even want 100 billion pages in your index. It&rsquo;s not about the quantity here again, right? You want the best web pages on your that&rsquo;s probably a billion or 10 billion.</p>
+</blockquote>
+<p>&ldquo;Wait a second! I was told quantity of data is always good&rdquo; is what you might be thinking to yourself. Its the narrative that has ruled the AI world since the days of GPT-3, where the more data you have you can just train a big model that can make things better. Right?</p>
+<h2 id="applying-scaling-laws">Applying Scaling Laws</h2>
+<p>Given the current situation with Large Language Models (LLMs), and how the pace has picked up in their development, not just from the big players but even the open source world. The basis of most of the development in the domain has been the result of the seminal works of neural scaling laws.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> The major focus of such research has been on three knobs: data, compute, and parameter-size. Neural scaling laws show that as you increase one or more of these knobs, the performance of models scale exponentially according to a power law.</p>
+<p>Following this assumption, companies such as OpenAI and Anthropic began exploring LLMs. Causal language models scaled up to have billions of parameters, trained on trillions of available texts on the internet, and tuned by human feedback. This is where the mainstream narrative was taken over by the &ldquo;more data, more compute, bigger models = $$$&rdquo;.</p>
+<h2 id="the-forgotten-lever">The Forgotten Lever</h2>
+<p>In a talk at the Simons Institute, Deepmind&rsquo;s Yasaman Bahri mentioned explicitly at the beginning of her talk that she would not focus on data quality.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Now, it&rsquo;s perfectly fine to do so, especially given that the talk was about the Taxonomy and Origins of Scaling Laws. But, I have noticed this trend that people tend to focus a lot more on the obvious 3 levers, and leave a 4th one out.</p>
+<p>Moreover, models such as Phi<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> show that significantly smaller models when trained on small quantity but high quality of data can reach close to the performance of larger models trained on larger amount of data with mixed quality.</p>
+<p>Data quality has become more talked about recently even though discussions on scaling laws have been going on for a few years now. It wasn&rsquo;t until the Beyond Scaling Laws paper that it was directly addressed.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> As has been shown in the research done before, the diminishing returns of increasing data, parameters, and compute, can be helped by pruning for data quality. In fact it is so effective that it changes the Power Law from linear (or realistically sub-linear) to exponential.</p>
+<p>Much more recently one of the co-authors of the Mamba architecture, Tri Dao talked about how data quality is the only thing that changes the slope of neural scaling,<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> and different architectures are not that different. Coming from someone who has led a challenge to the transformer as the status quo for the first time in almost half a decade, that&rsquo;s a huge claim.</p>
+<h2 id="the-end-">The End (?)</h2>
+<p>The problem of quality becomes much more evident when we start realising how a lot of text currently produced on the internet is by LLMs. Hence, future LLMs will be trained on synthetic data, i.e. non human-generated data. On the one hand, there is the optimistic take of models like Orca,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> trained on the traces of GPT-4, which performs quite well on certain benchmarks. But on the other hand, there is the curse of recursion<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that signals decay in models trained on too much synthetically generated data.</p>
+<p>Further, the issue is not limited to openly available data. Certain knowledge workers on platforms such as Amazon&rsquo;s Mechanical Turk are incentivized to use LLMs to increase their productivity. So much so that it is estimated around 33–46% of them use LLMs for data annotation.<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup> In case you thought you could get around the terrible quality of freely scrapable data on the internet, then you need to think again.</p>
+<h2 id="remembering-the-forgotten">Remembering the Forgotten</h2>
+<p>All hope is not lost. Data quality is hard to judge, and yes we do not exactly know how important it is for which sorts of data, for what architectures, and in which tasks. But, as I mentioned before, there are ways to prune out data and figure out a general idea of which data points can help scale your model&rsquo;s performance exponentially.</p>
+<p>Yes, its not perfect, but there are nascent methods out there. It is harder to have general solutions since quality itself is hard to generally define, i.e. it is heavily context dependent. Sure using synthetic datasets, one can control for quality to some extent, but it comes with its own set of caveats.</p>
+<p>With smaller models being easier to use, and fine-tuning them becoming even easier (due to new methods like DPO), training models on your own smaller, high quality data becomes more feasible. And hence, the forgotten lever can be utilised for &ldquo;scaling&rdquo; the slopes of error graphs (pun intended).</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Gunning for Google with Perplexity CEO Aravind Srinivas. Cognitive Revolution. <a href="https://share.snipd.com/snip/73a24ca0-bb74-4918-853c-a3c0b907491f">Link</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Explaining Neural Scaling Laws. Bahri et. al. (2021). <a href="https://arxiv.org/pdf/2102.06701.pdf">Link</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Scaling Laws for Neural Language Models. Kaplan &amp; McCandlish et. al. (2020). <a href="https://arxiv.org/abs/2001.08361">Link</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Scaling Laws for Autoregressive Generative Modeling. Henighan et. al. (2020). <a href="https://arxiv.org/abs/2010.14701">Link</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Understanding the origins and taxonomy of neural scaling laws. Yasaman Bahri (2023). <a href="https://www.youtube.com/watch?v=MUvFuZpxLU8">Link</a>&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>Textbooks are all you need. Gunasekar et. al. (2023). <a href="https://arxiv.org/abs/2306.11644">Link</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>Textbooks Are All You Need II: phi-1.5 technical report. Li et. al. (2023). <a href="https://arxiv.org/abs/2309.05463">Link</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8">
+<p>Beyond neural scaling laws: beating power law scaling via data pruning. Sorscher et. al. (2022). <a href="https://arxiv.org/abs/2206.14486">Link</a>&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9">
+<p>Interviewing Tri Dao and Michael Poli of Together ai on the Future of LLM Architectures. Interconnects AI. <a href="https://www.youtube.com/watch?v=OFFHiJzPpCQ&amp;t=1902s">Link</a>&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10">
+<p>Orca: Progressive Learning from Complex Explanation Traces of GPT-4. Mukherjee et. al. (2023). <a href="https://arxiv.org/abs/2306.02707">Link</a>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11">
+<p>The Curse of Recursion: Training on Generated Data Makes Models Forget. Shumailov et. al. (2023). <a href="https://arxiv.org/abs/2305.17493v2">Link</a>&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12">
+<p>Artificial Artificial Artificial Intelligence: Crowd Workers Widely Use Large Language Models for Text Production Tasks. Veselovsky et. al. (2023). <a href="https://arxiv.org/abs/2306.07899">Link</a>&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+  </div>
+
+  
+  <div class="post-tags">
+    
+    <a class="post-tag" href="/tags/scaling-laws/"># scaling-laws</a>
+    
+    <a class="post-tag" href="/tags/data-quality/"># data-quality</a>
+    
+    <a class="post-tag" href="/tags/llm/"># llm</a>
+    
+  </div>
+  
+
+  <div class="post-prevnext">
+    <div class="post-pn post-pn-prev">
+      
+      <div class="post-pn-label">← PREVIOUS</div>
+      <a class="post-pn-title" href="/posts/human&#43;ai/">Where Human and Artificial Intelligence meets</a>
+      
+    </div>
+    <div class="post-pn post-pn-next">
+      
+      <div class="post-pn-label">NEXT →</div>
+      <a class="post-pn-title" href="/posts/deceptiveagents/">Artificial Misdirection: Misalignment of LLMs</a>
+      
+    </div>
+  </div>
+
+  <div class="post-footer">
+    <span>← <a href="/posts/">back to blog</a></span>
+    <span>
+      <a href="/index.xml">rss</a>
+      
+      <a href="https://github.com/ribhu97/personal-blog/blob/master/exampleSite/content/posts/ForgottenLever.md" target="_blank" rel="noopener">edit on github</a>
+      
+    </span>
+  </div>
+
+</div>
+
+    <div class="footer">
+  <span class="footer-copy">ribhu lahiri · 2026</span>
+  <span class="footer-links">
+    
+      <a href="https://twitter.com/ribhu97" target="_blank" rel="noopener">twitter</a>
+    
+      <a href="https://github.com/ribhu97" target="_blank" rel="noopener">github</a>
+    
+      <a href="https://www.linkedin.com/in/ribhu97" target="_blank" rel="noopener">linkedin</a>
+    
+    <a href="/index.xml">rss</a>
+  </span>
+</div>
+
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/bundle.js"></script>
+  
+
+  
+  
+
+  
+
+
+</body>
+</html>

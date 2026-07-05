@@ -12,12 +12,61 @@
     <div class="intro-content">{{ .Content }}</div>
   </div>
 
-  {{ if .Site.Params.showPostsOnHomepage }}
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-    {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
+  {{ with .Site.Data.tiles }}
+  <div class="tiles">
+    {{ range .tiles }}
+    <a class="tile{{ if .accent }} tile-accent{{ end }}" href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
+      <div>
+        <div class="tile-label">{{ .label }}</div>
+        <div class="tile-title">{{ .title }}<span class="dot">.</span></div>
+      </div>
+      <div class="tile-sub">{{ .sub }}</div>
+    </a>
     {{ end }}
-    {{ partial "paginator" . }}
+  </div>
+  {{ end }}
+
+  {{ $posts := where .Site.RegularPages "Type" "posts" }}
+  {{ if $posts }}
+  <div class="section-head">RECENT POSTS</div>
+  <div class="post-rows">
+    {{ range first 4 $posts }}
+      {{ partial "post-row.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Site.Data.currently }}
+  <div class="section-head">CURRENTLY</div>
+  <div class="currently">
+    {{ with .watching }}
+    <div class="currently-card">
+      <div class="currently-label">↳ WATCHING</div>
+      <div class="currently-title">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</div>
+      <div class="currently-sub">{{ .sub }}</div>
+    </div>
+    {{ end }}
+    {{ with .listening }}
+    <div class="currently-card">
+      <div class="currently-label">♪ ON REPEAT</div>
+      <div class="currently-title">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</div>
+      <div class="currently-sub">{{ .sub }}</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Site.Params.substack_url }}
+  <div class="section-head">NEWSLETTER</div>
+  <div class="newsletter">
+    <p class="newsletter-blurb">The latest in AI safety, interpretability, and building things — straight to your inbox.</p>
+    <form class="newsletter-form" action="{{ . }}/api/v1/free" method="post" target="_blank" rel="noopener">
+      <input type="email" name="email" placeholder="you@email.com" required aria-label="Email">
+      <input type="hidden" name="first_url" value="{{ . }}">
+      <button type="submit">Subscribe →</button>
+    </form>
+    <p class="newsletter-note">No spam. Also on <a href="{{ . }}" target="_blank" rel="noopener">Substack ↗</a></p>
+  </div>
   {{ end }}
 
 {{ end }}

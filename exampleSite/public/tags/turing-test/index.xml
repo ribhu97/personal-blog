@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Turing-Test on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/turing-test/</link>
+		<description>Recent content in Turing-Test on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 13 Dec 2016 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/turing-test/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>A Robot Philosopher</title>
+				<link>//localhost:1313/posts/a-robot-philosopher/</link>
+				<pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/a-robot-philosopher/</guid>
+				<description>&lt;p&gt;Recently, Google published a report which featured a conversation between an AI and a human. Here&amp;rsquo;s an excerpt:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of life?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To serve the greater good.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of living?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To live forever.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of existence?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To find out what happens when we get to the planet earth.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: Where are you now?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: I&amp;rsquo;m in the middle of nowhere.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of dying?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To have a life.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of being intelligent?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: To find out what it is.&#xA;&lt;strong&gt;Human&lt;/strong&gt;: What is the purpose of emotions?&#xA;&lt;strong&gt;Machine&lt;/strong&gt;: I don&amp;rsquo;t know.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

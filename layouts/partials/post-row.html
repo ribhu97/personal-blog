@@ -1,0 +1,9 @@
+<div class="post-row">
+  <span class="post-row-date">{{ .Date.Format "2006.01.02" }}</span>
+  <a class="post-row-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ with index (.Params.categories | default slice) 0 }}
+  <a class="post-row-tag" href="{{ printf "/categories/%s/" (. | urlize) | relURL }}">{{ . | lower }}</a>
+  {{ else }}
+  <span class="post-row-tag"></span>
+  {{ end }}
+</div>

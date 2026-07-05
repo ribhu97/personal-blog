@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Llm on Ribhu&#39;s Blog</title>
+		<link>//localhost:1313/tags/llm/</link>
+		<description>Recent content in Llm on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 12 May 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="//localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Benchmark Trap: Why LLM Metrics Mislead and Evals Enlighten</title>
+				<link>//localhost:1313/posts/llm-benchmarks/</link>
+				<pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/llm-benchmarks/</guid>
+				<description>&lt;p&gt;&amp;ldquo;We have just launched our newest large language model trained with the best curated dataset with the state-of-the-art GPUs and we have improved on the MMLU by &lt;em&gt;n&lt;/em&gt; number of points, surpassing the previous best.&amp;rdquo; Does this sound familiar? Reads like a press release of an AI company releasing their shiny new LLM for the world. As the arms race heats up it was bound to happen. But there&amp;rsquo;s one big problem with this line. No, I&amp;rsquo;m not talking about the obvious x-risk with larger, uninterpretable, and unaligned models. I&amp;rsquo;m not talking about the effects on climate change due to the the emissions of data centres. I want to illustrate one issue that&amp;rsquo;s not talked about as much but is actually much easier to control and to take action on.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Artificial Misdirection: Misalignment of LLMs</title>
+				<link>//localhost:1313/posts/deceptiveagents/</link>
+				<pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/deceptiveagents/</guid>
+				<description>&lt;p&gt;In 2024 humanity is facing a whole bunch of societal and potentially existential threats. World War 3, global recession, climate change, the list is pretty much endless. Development of capable AI systems, although still narrow, provide another whole set to be added to that. A common theme among all of these problems is that they are never-ending battles, that we as a civilization have to keep working to ensure it doesn&amp;rsquo;t happen or worsen.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Forgotten Lever of Neural Scaling Laws</title>
+				<link>//localhost:1313/posts/forgottenlever/</link>
+				<pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/posts/forgottenlever/</guid>
+				<description>&lt;p&gt;While driving a few weeks back, I was listening to a podcast (Cognitive Revolution) episode where the Perplexity CEO, Aravind Srinivas was talking about moats in the AI space.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; One of the things he mentioned really stuck out to me.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Everybody&amp;rsquo;s building their index because I think in the world where large language models are commodity and the training recipe for them or the weights are just right on their open source, the edge goes to the data markets (&amp;hellip;) You don&amp;rsquo;t even want 100 billion pages in your index. It&amp;rsquo;s not about the quantity here again, right? You want the best web pages on your that&amp;rsquo;s probably a billion or 10 billion.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

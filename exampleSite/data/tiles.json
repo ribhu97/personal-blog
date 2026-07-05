@@ -1,0 +1,46 @@
+{
+  "tiles": [
+    {
+      "label": "01 / RESEARCH",
+      "title": "Mech. Interp. & Safety",
+      "sub": "Scheming, self-replication, probes, circuits. Notes from the field.",
+      "url": "/categories/safety/",
+      "accent": true
+    },
+    {
+      "label": "02 / BUILDS",
+      "title": "Trinkets & tools",
+      "sub": "Small tools that scratch personal itches.",
+      "url": "/projects/",
+      "accent": false
+    },
+    {
+      "label": "03 / WRITING",
+      "title": "The blog",
+      "sub": "Long-form on AI, building, and adjacent.",
+      "url": "/posts/",
+      "accent": false
+    },
+    {
+      "label": "04 / FILMS",
+      "title": "Letterboxd",
+      "sub": "Lists, micro-reviews, the occasional rant.",
+      "url": "#",
+      "accent": false
+    },
+    {
+      "label": "05 / SOUND",
+      "title": "Playlists",
+      "sub": "Spotify, heavy on the bass.",
+      "url": "https://open.spotify.com/playlist/1WBvlXVgFTlHQRWLVEYUls?si=712eaebb08e1455e",
+      "accent": false
+    },
+    {
+      "label": "06 / SPORTS",
+      "title": "Hoops & football",
+      "sub": "Armchair analysis, league tables.",
+      "url": "/categories/sports/",
+      "accent": false
+    }
+  ]
+}

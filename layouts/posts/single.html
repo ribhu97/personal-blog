@@ -1,18 +1,83 @@
 {{ define "body_classes" }}page-blog-single{{ end }}
 
 {{ define "main" }}
-  <div class="blog">
-    {{ if .Site.Params.showAuthorOnPosts }}
-      {{ partial "author.html" . }}
+<div class="post">
+
+  <div class="post-crumb">
+    / <a href="{{ "/posts/" | relURL }}">blog</a>
+    {{ with index (.Params.categories | default slice) 0 }}
+     / <a href="{{ printf "/categories/%s/" (. | urlize) | relURL }}">{{ . | lower }}</a>
     {{ end }}
-    <div class="intro">
-      <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
-      {{ if .Params.image }}
-      <img src="{{ .Params.image | relURL }}" />
+     / {{ .File.BaseFileName | lower }}
+  </div>
+
+  {{ with index (.Params.categories | default slice) 0 }}
+  <div class="post-cat">{{ . | upper }}</div>
+  {{ end }}
+
+  <h1 class="post-title">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+
+  <div class="post-meta">
+    <span class="post-meta-item">{{ .Date.Format "2 Jan 2006" | lower }}</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">{{ .ReadingTime }} min read</span>
+    <span class="post-meta-sep">·</span>
+    <span class="post-meta-item">{{ .WordCount }} words</span>
+    <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
+  </div>
+
+  {{ with .Params.description }}
+  <p class="post-dek">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.image }}
+  <figure class="post-hero">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </figure>
+  {{ end }}
+
+  {{ with .Params.substack }}
+  <div class="post-substack-link">
+    <a href="{{ . }}" target="_blank" rel="noopener">also on substack ↗</a>
+  </div>
+  {{ end }}
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.tags }}
+  <div class="post-tags">
+    {{ range . }}
+    <a class="post-tag" href="{{ printf "/tags/%s/" (. | urlize) | relURL }}"># {{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="post-prevnext">
+    <div class="post-pn post-pn-prev">
+      {{ with .PrevInSection }}
+      <div class="post-pn-label">← PREVIOUS</div>
+      <a class="post-pn-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
       {{ end }}
     </div>
-    <div class="content">
-      {{ .Content }}
+    <div class="post-pn post-pn-next">
+      {{ with .NextInSection }}
+      <div class="post-pn-label">NEXT →</div>
+      <a class="post-pn-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
     </div>
   </div>
+
+  <div class="post-footer">
+    <span>← <a href="{{ "/posts/" | relURL }}">back to blog</a></span>
+    <span>
+      <a href="{{ "index.xml" | relURL }}">rss</a>
+      {{ with .Site.Params.github_repo }}
+      <a href="{{ . }}/blob/master/exampleSite/content/posts/{{ $.File.BaseFileName }}.md" target="_blank" rel="noopener">edit on github</a>
+      {{ end }}
+    </span>
+  </div>
+
+</div>
 {{ end }}
