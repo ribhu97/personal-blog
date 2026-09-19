@@ -2,10 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/tags/art/</loc>
-    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/categories/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/chain-of-thought/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/evals/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/mech-interp/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/motivated-reasoning/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/research/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/safety/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/model-forensics/</loc>
+    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/art/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/embeddings/</loc>
@@ -23,22 +50,10 @@
     <loc>//localhost:1313/tags/philosophy/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2025-03-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/benchmarks/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/evals/</loc>
-    <lastmod>2024-05-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/tags/llm/</loc>
-    <lastmod>2024-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/research/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/llm-benchmarks/</loc>
@@ -69,9 +84,6 @@
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/deception/</loc>
-    <lastmod>2024-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/safety/</loc>
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/data-quality/</loc>

@@ -10,9 +10,23 @@
 		
 		
 		
-			<lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 13 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Research</title>
+				<link>//localhost:1313/categories/research/</link>
+				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/categories/research/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Safety</title>
+				<link>//localhost:1313/categories/safety/</link>
+				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>//localhost:1313/categories/safety/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Essays</title>
 				<link>//localhost:1313/categories/essays/</link>
@@ -21,24 +35,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Research</title>
-				<link>//localhost:1313/categories/research/</link>
-				<pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/categories/research/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Builds</title>
 				<link>//localhost:1313/categories/builds/</link>
 				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
 				<guid>//localhost:1313/categories/builds/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Safety</title>
-				<link>//localhost:1313/categories/safety/</link>
-				<pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/categories/safety/</guid>
 				<description></description>
 			</item>
 			<item>
