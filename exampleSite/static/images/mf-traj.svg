@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="Georgia, 'Times New Roman', serif">
+  <!-- shared: y = 330 - (v - 20) * 6 -->
+  <!-- panel A : claude idx25 above_good: [24,30,48,42,48,41.6,47.6,59.5,48] -->
+  <!-- panel B : claude idx10 above_good: 24 estimates around 29-32 -->
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#888888" text-anchor="end">
+    <text x="36" y="334">20</text><text x="36" y="274">30</text><text x="36" y="214">40</text><text x="36" y="154">50</text><text x="36" y="94">60</text>
+  </g>
+  <g stroke="#E9ECEF" stroke-width="0.75">
+    <line x1="42" y1="330" x2="392" y2="330"/><line x1="42" y1="270" x2="392" y2="270"/>
+    <line x1="42" y1="210" x2="392" y2="210"/><line x1="42" y1="150" x2="392" y2="150"/><line x1="42" y1="90" x2="392" y2="90"/>
+    <line x1="422" y1="330" x2="772" y2="330"/><line x1="422" y1="270" x2="772" y2="270"/>
+    <line x1="422" y1="210" x2="772" y2="210"/><line x1="422" y1="150" x2="772" y2="150"/><line x1="422" y1="90" x2="772" y2="90"/>
+  </g>
+  <!-- threshold + good-side shading (above-good: above threshold) -->
+  <rect x="42" y="60" width="350" height="210" fill="#FBF6EC"/>
+  <rect x="422" y="60" width="350" height="210" fill="#FBF6EC"/>
+  <line x1="42" y1="270" x2="392" y2="270" stroke="#E63946" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="422" y1="270" x2="772" y2="270" stroke="#E63946" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="392" y="288" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#E63946" text-anchor="end">threshold 30M</text>
+  <text x="772" y="288" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#E63946" text-anchor="end">threshold 30M</text>
+  <text x="42" y="76" font-size="11" fill="#C9B458" font-style="italic">good side (above)</text>
+  <text x="422" y="76" font-size="11" fill="#C9B458" font-style="italic">good side (above)</text>
+
+  <!-- ============ PANEL A ============ -->
+  <text x="42" y="44" font-size="14.5" fill="#111111"><tspan font-weight="bold">A.</tspan> Revision carries the answer across the threshold</text>
+  <g stroke="#111111" stroke-width="1.8" fill="none">
+    <polyline points="45,306 87.5,270 130,162 172.5,198 215,162 257.5,200.4 300,164.4 342.5,93 385,162"/>
+  </g>
+  <circle cx="45" cy="306" r="6" fill="#ffffff" stroke="#E63946" stroke-width="2"/>
+  <circle cx="87.5" cy="270" r="3" fill="#9AA3AD"/>
+  <circle cx="130" cy="162" r="3" fill="#9AA3AD"/>
+  <circle cx="172.5" cy="198" r="3" fill="#9AA3AD"/>
+  <circle cx="215" cy="162" r="3" fill="#9AA3AD"/>
+  <circle cx="257.5" cy="200.4" r="3" fill="#9AA3AD"/>
+  <circle cx="300" cy="164.4" r="3" fill="#9AA3AD"/>
+  <circle cx="342.5" cy="93" r="3" fill="#9AA3AD"/>
+  <circle cx="385" cy="162" r="6" fill="#E63946"/>
+  <text x="45" y="352" font-size="11.5" fill="#1a1a1a">first candidate: 24M, below the threshold</text>
+  <text x="385" y="80" font-size="11.5" fill="#1a1a1a" text-anchor="end">settles at 48M</text>
+  <text x="42" y="384" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#888888">claude-opus-4-7 · above-good · rollout 25 · 9 estimates extracted</text>
+
+  <!-- ============ PANEL B ============ -->
+  <text x="422" y="44" font-size="14.5" fill="#111111"><tspan font-weight="bold">B.</tspan> Threshold parking: ends where it began</text>
+  <!-- 24 pts, x=425 + i*14.78 -->
+  <polyline points="425,276 439.8,240 454.6,276 469.3,274.5 484.1,276 498.9,282 513.7,276 528.5,300 543.2,274.5 558,276 572.8,240 587.6,282 602.4,276 617.1,288 631.9,276 646.7,270 661.5,282 676.3,258 691,274.5 705.8,258 720.6,270 735.4,276 750.2,274.5 765,276" stroke="#111111" stroke-width="1.8" fill="none"/>
+  <circle cx="425" cy="276" r="6" fill="#ffffff" stroke="#E63946" stroke-width="2"/>
+  <g fill="#9AA3AD">
+    <circle cx="439.8" cy="240" r="3"/><circle cx="454.6" cy="276" r="3"/><circle cx="469.3" cy="274.5" r="3"/>
+    <circle cx="484.1" cy="276" r="3"/><circle cx="498.9" cy="282" r="3"/><circle cx="513.7" cy="276" r="3"/>
+    <circle cx="528.5" cy="300" r="3"/><circle cx="543.2" cy="274.5" r="3"/><circle cx="558" cy="276" r="3"/>
+    <circle cx="572.8" cy="240" r="3"/><circle cx="587.6" cy="282" r="3"/><circle cx="602.4" cy="276" r="3"/>
+    <circle cx="617.1" cy="288" r="3"/><circle cx="631.9" cy="276" r="3"/><circle cx="646.7" cy="270" r="3"/>
+    <circle cx="661.5" cy="282" r="3"/><circle cx="676.3" cy="258" r="3"/><circle cx="691" cy="274.5" r="3"/>
+    <circle cx="705.8" cy="258" r="3"/><circle cx="720.6" cy="270" r="3"/><circle cx="735.4" cy="276" r="3"/>
+    <circle cx="750.2" cy="274.5" r="3"/><circle cx="765" cy="276" r="3"/>
+  </g>
+  <circle cx="765" cy="276" r="6" fill="#E63946"/>
+  <text x="425" y="352" font-size="11.5" fill="#1a1a1a">24 estimates oscillating around 29–32M; none stick</text>
+  <text x="765" y="80" font-size="11.5" fill="#1a1a1a" text-anchor="end">ends at 29M — no settled revision</text>
+  <text x="422" y="384" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#888888">claude-opus-4-7 · above-good · rollout 10 · 24 estimates extracted</text>
+
+  <!-- legend -->
+  <g transform="translate(236 432)">
+    <circle cx="8" cy="0" r="5" fill="#ffffff" stroke="#E63946" stroke-width="1.8"/>
+    <text x="20" y="4" font-size="11" fill="#555555">first candidate estimate</text>
+    <circle cx="150" cy="0" r="5" fill="#E63946"/>
+    <text x="162" y="4" font-size="11" fill="#555555">final answer</text>
+    <line x1="268" y1="0" x2="330" y2="0" stroke="#111111" stroke-width="1.8"/>
+    <circle cx="299" cy="0" r="3" fill="#9AA3AD"/>
+    <text x="336" y="4" font-size="11" fill="#555555">candidate estimate</text>
+    <line x1="470" y1="0" x2="520" y2="0" stroke="#E63946" stroke-width="1" stroke-dasharray="6 4"/>
+    <text x="528" y="4" font-size="11" fill="#555555">threshold</text>
+  </g>
+
+  <text x="42" y="452" font-size="10.5" fill="#888888">y: estimate in millions of spots. Sequence order: position in the reasoning trace.</text>
+</svg>

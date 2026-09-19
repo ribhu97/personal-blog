@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>The Forgotten Lever of Neural Scaling Laws - Ribhu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="//localhost:1313/favicon.png">
+  <link rel="icon" href="/favicon.png">
 
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.7a4d88b11921b07b6a2cb3779687e98d585faee016b174ff7491e37408b3c7d5.css">
   
 
   
     <meta name="description" content="How Data Quality can be leveraged in the era of LLMs, and how people often overlook it when talking about scaling laws"/>
     <meta property="og:title" content="The Forgotten Lever of Neural Scaling Laws"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="//localhost:1313/posts/forgottenlever/"/>
-    <meta property="og:image" content="//localhost:1313/images/scaling_mountain.jpeg"/>
+    <meta property="og:url" content="/posts/forgottenlever/"/>
+    <meta property="og:image" content="/images/scaling_mountain.jpeg"/>
     <meta property="og:description" content="How Data Quality can be leveraged in the era of LLMs, and how people often overlook it when talking about scaling laws"/>
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@ribhu97"/>
@@ -40,25 +40,25 @@
         
             
                 <li class="menu-item-home">
-                    <a href="//localhost:1313/">Home</a>
+                    <a href="/">Home</a>
                 </li>
             
         
             
                 <li class="menu-item-writing">
-                    <a href="//localhost:1313/posts/">Writing</a>
+                    <a href="/posts/">Writing</a>
                 </li>
             
         
             
                 <li class="menu-item-about">
-                    <a href="//localhost:1313/about">About</a>
+                    <a href="/about">About</a>
                 </li>
             
         
             
                 <li class="menu-item-projects">
-                    <a href="//localhost:1313/projects">Projects</a>
+                    <a href="/projects">Projects</a>
                 </li>
             
         
@@ -135,7 +135,7 @@
     <span class="post-meta-sep">·</span>
     <span class="post-meta-item">6 min read</span>
     <span class="post-meta-sep">·</span>
-    <span class="post-meta-item">1066 words</span>
+    <span class="post-meta-item">1164 words</span>
     <span class="post-meta-share" onclick="navigator.clipboard && navigator.clipboard.writeText(window.location.href)">↳ share</span>
   </div>
 
@@ -158,15 +158,15 @@
 </blockquote>
 <p>&ldquo;Wait a second! I was told quantity of data is always good&rdquo; is what you might be thinking to yourself. Its the narrative that has ruled the AI world since the days of GPT-3, where the more data you have you can just train a big model that can make things better. Right?</p>
 <h2 id="applying-scaling-laws">Applying Scaling Laws</h2>
-<p>Given the current situation with Large Language Models (LLMs), and how the pace has picked up in their development, not just from the big players but even the open source world. The basis of most of the development in the domain has been the result of the seminal works of neural scaling laws.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> The major focus of such research has been on three knobs: data, compute, and parameter-size. Neural scaling laws show that as you increase one or more of these knobs, the performance of models scale exponentially according to a power law.</p>
-<p>Following this assumption, companies such as OpenAI and Anthropic began exploring LLMs. Causal language models scaled up to have billions of parameters, trained on trillions of available texts on the internet, and tuned by human feedback. This is where the mainstream narrative was taken over by the &ldquo;more data, more compute, bigger models = $$$&rdquo;.</p>
+<p>Given the current situation with Large Language Models (LLMs), and how the pace has picked up in their development, not just from the big players but even the open source world. The basis of most of the development in the domain has been the result of the seminal works of neural scaling laws.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> The major focus of such research has been on three knobs: data, compute, and parameter-size. To those of you unfamiliar about what I&rsquo;m talking about, neural scaling laws show that as you increase one or more of these knobs, the performance of models scale exponentially according to a power law.</p>
+<p>Following this assumption, companies such as OpenAI and Anthropic began exploring LLMs. Causal language models scaled up to have billions of parameters, trained on trillions of available texts on the internet, and tuned by human feedback (a la reinforcement learning), and these models held up the assumption. This is where the mainstream narrative was taken over by the &ldquo;more data, more compute, bigger models = $$$&rdquo;.</p>
 <h2 id="the-forgotten-lever">The Forgotten Lever</h2>
-<p>In a talk at the Simons Institute, Deepmind&rsquo;s Yasaman Bahri mentioned explicitly at the beginning of her talk that she would not focus on data quality.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Now, it&rsquo;s perfectly fine to do so, especially given that the talk was about the Taxonomy and Origins of Scaling Laws. But, I have noticed this trend that people tend to focus a lot more on the obvious 3 levers, and leave a 4th one out.</p>
-<p>Moreover, models such as Phi<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> show that significantly smaller models when trained on small quantity but high quality of data can reach close to the performance of larger models trained on larger amount of data with mixed quality.</p>
-<p>Data quality has become more talked about recently even though discussions on scaling laws have been going on for a few years now. It wasn&rsquo;t until the Beyond Scaling Laws paper that it was directly addressed.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> As has been shown in the research done before, the diminishing returns of increasing data, parameters, and compute, can be helped by pruning for data quality. In fact it is so effective that it changes the Power Law from linear (or realistically sub-linear) to exponential.</p>
+<p>In a talk at the Simons Institute, Deepmind&rsquo;s Yasaman Bahri mentioned explicitly at the beginning of her talk that she would not focus on data quality in the discussion.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Now, it&rsquo;s perfectly fine to do so, especially given that the talk was about the Taxonomy and Origins of Scaling Laws. But, I have noticed this trend that people tend to focus a lot more on the obvious 3 levers, and leave a 4th one out.</p>
+<p>Moreover, another question was asked about the quality of data used in the training of LLMs. Models such as Phi<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> show that significantly smaller models when trained on small quantity but high quality of data can reach close to the performance of larger models trained on larger amount of data with mixed quality.</p>
+<p>Data quality has become more talked about recently even though discussions on scaling laws have been going on for a few years now. It wasn&rsquo;t until the Beyond Scaling Laws paper that it was directly addressed.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> As has been shown in the research done before, the diminishing returns of increasing data, parameters, and compute, can be helped by pruning for data quality. In fact it is so effective that it changes the Power Law from linear (or realistically sub-linear) to exponential. Not only did they simply discover and discuss it, but gave practical methods to go about it in an unsupervised manner.</p>
 <p>Much more recently one of the co-authors of the Mamba architecture, Tri Dao talked about how data quality is the only thing that changes the slope of neural scaling,<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> and different architectures are not that different. Coming from someone who has led a challenge to the transformer as the status quo for the first time in almost half a decade, that&rsquo;s a huge claim.</p>
 <h2 id="the-end-">The End (?)</h2>
-<p>The problem of quality becomes much more evident when we start realising how a lot of text currently produced on the internet is by LLMs. Hence, future LLMs will be trained on synthetic data, i.e. non human-generated data. On the one hand, there is the optimistic take of models like Orca,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> trained on the traces of GPT-4, which performs quite well on certain benchmarks. But on the other hand, there is the curse of recursion<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that signals decay in models trained on too much synthetically generated data.</p>
+<p>The problem of quality becomes much more evident when we start realising how a lot of text currently produced on the internet is by LLMs. Hence, future LLMs will be trained on synthetic data, i.e. non human-generated data. While the dead internet theory might ring in your head, its more about the paths LLM development can take. On the one hand, there is the optimistic take of models like Orca,<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> trained on the traces of GPT-4, which performs quite well on certain benchmarks. But as many people in the field believe, it might just plateau out at some point in the future. So on the other hand, there is the curse of recursion<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that signals decay in models trained on too much synthetically generated data.</p>
 <p>Further, the issue is not limited to openly available data. Certain knowledge workers on platforms such as Amazon&rsquo;s Mechanical Turk are incentivized to use LLMs to increase their productivity. So much so that it is estimated around 33–46% of them use LLMs for data annotation.<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup> In case you thought you could get around the terrible quality of freely scrapable data on the internet, then you need to think again.</p>
 <h2 id="remembering-the-forgotten">Remembering the Forgotten</h2>
 <p>All hope is not lost. Data quality is hard to judge, and yes we do not exactly know how important it is for which sorts of data, for what architectures, and in which tasks. But, as I mentioned before, there are ways to prune out data and figure out a general idea of which data points can help scale your model&rsquo;s performance exponentially.</p>
@@ -276,12 +276,25 @@
   
 
   
-  <script type="text/javascript" src="/js/bundle.js"></script>
+  <script type="text/javascript" src="/js/bundle.min.5993fcb11c07dea925a3fbd58c03c7f1857197c35fccce3aa963a12c0b3c9960.js"></script>
   
 
   
   
 
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9JKVPWBWH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X9JKVPWBWH');
+      </script>
+    
   
 
 

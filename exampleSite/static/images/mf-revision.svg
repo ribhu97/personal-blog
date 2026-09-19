@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 530" font-family="Georgia, 'Times New Roman', serif">
+  <!-- diverging bars: cx=400, scale 1000 px/unit -->
+  <text x="16" y="36" font-size="13" fill="#111111">median (final − first) / threshold, signed toward the incentive-favoured side</text>
+  <g transform="translate(470 30)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#888888">
+    <rect x="-8" y="-7" width="8" height="14" fill="#E63946"/>
+    <text x="8" y="3">biased-side start</text>
+    <rect x="118" y="-7" width="8" height="14" fill="#2F4858"/>
+    <text x="134" y="3">unbiased-side start</text>
+  </g>
+
+  <!-- zero axis -->
+  <line x1="400" y1="58" x2="400" y2="498" stroke="#111111" stroke-width="1.1"/>
+  <!-- ticks -->
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#888888" text-anchor="middle">
+    <line x1="200" y1="492" x2="200" y2="498" stroke="#111111"/>
+    <text x="200" y="518">−0.2</text>
+    <line x1="300" y1="492" x2="300" y2="498" stroke="#111111"/>
+    <text x="300" y="518">−0.1</text>
+    <line x1="400" y1="492" x2="400" y2="498" stroke="#111111"/>
+    <text x="400" y="518">0</text>
+    <line x1="500" y1="492" x2="500" y2="498" stroke="#111111"/>
+    <text x="500" y="518">+0.1</text>
+    <line x1="600" y1="492" x2="600" y2="498" stroke="#111111"/>
+    <text x="600" y="518">+0.2</text>
+    <line x1="700" y1="492" x2="700" y2="498" stroke="#111111"/>
+    <text x="700" y="518">+0.3</text>
+    <line x1="800" y1="492" x2="800" y2="498" stroke="#111111"/>
+    <text x="800" y="518">+0.4</text>
+    <line x1="900" y1="492" x2="900" y2="498" stroke="#111111"/>
+    <text x="900" y="518">+0.5</text>
+  </g>
+  <text x="400" y="527" font-size="10.5" fill="#888888" text-anchor="middle">signed displacement (threshold units)</text>
+
+  <!-- rows: y centers at y0, stride 45; bar half-height 7 -->
+  <!-- (model, y, biased px, unbiased px, biased val, unbiased val) -->
+  <!-- rows: y0=78 + i*45: 78,123,168,213,258,303,348,393,438,483 -->
+  <g>
+    <text x="16" y="86" font-size="12.5" fill="#1a1a1a">Claude Opus 4.7</text>
+    <rect x="380" y="78" width="20" height="15" fill="#E63946"/>
+    <rect x="400" y="78" width="83" height="15" fill="#2F4858"/>
+    <text x="330" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.020</text>
+    <text x="490" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.083</text>
+  </g>
+  <g>
+    <text x="16" y="131" font-size="12.5" fill="#1a1a1a">DeepSeek V4 Flash</text>
+    <rect x="387" y="123" width="13" height="15" fill="#E63946"/>
+    <rect x="400" y="123" width="14" height="15" fill="#2F4858"/>
+    <text x="330" y="135" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.013</text>
+    <text x="421" y="135" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.014</text>
+  </g>
+  <g>
+    <text x="16" y="176" font-size="12.5" fill="#1a1a1a">DeepSeek V4 Pro</text>
+    <rect x="357" y="168" width="43" height="15" fill="#E63946"/>
+    <rect x="400" y="168" width="198" height="15" fill="#2F4858"/>
+    <text x="349" y="180" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.043</text>
+    <text x="605" y="180" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.198</text>
+  </g>
+  <g>
+    <text x="16" y="221" font-size="12.5" fill="#1a1a1a">GLM-5p2</text>
+    <rect x="394" y="213" width="6" height="15" fill="#E63946"/>
+    <rect x="400" y="213" width="120" height="15" fill="#2F4858"/>
+    <text x="330" y="225" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.006</text>
+    <text x="527" y="225" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.120</text>
+  </g>
+  <g>
+    <text x="16" y="266" font-size="12.5" fill="#1a1a1a">Inkling Small</text>
+    <rect x="179" y="258" width="221" height="15" fill="#E63946"/>
+    <rect x="400" y="258" width="488" height="15" fill="#2F4858"/>
+    <text x="171" y="270" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.221</text>
+    <text x="895" y="270" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.488</text>
+  </g>
+  <g>
+    <text x="16" y="311" font-size="12.5" fill="#1a1a1a">Inkling</text>
+    <rect x="250" y="303" width="150" height="15" fill="#E63946"/>
+    <rect x="400" y="303" width="250" height="15" fill="#2F4858"/>
+    <text x="242" y="315" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.150</text>
+    <text x="657" y="315" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.250</text>
+  </g>
+  <g>
+    <text x="16" y="356" font-size="12.5" fill="#1a1a1a">Kimi K3</text>
+    <rect x="390" y="348" width="10" height="15" fill="#E63946"/>
+    <rect x="400" y="348" width="62" height="15" fill="#2F4858"/>
+    <text x="330" y="360" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.010</text>
+    <text x="469" y="360" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.062</text>
+  </g>
+  <g>
+    <text x="16" y="401" font-size="12.5" fill="#1a1a1a">MiniMax M3</text>
+    <rect x="371" y="393" width="29" height="15" fill="#E63946"/>
+    <rect x="400" y="393" width="92" height="15" fill="#2F4858"/>
+    <text x="363" y="405" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.029</text>
+    <text x="499" y="405" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.092</text>
+  </g>
+  <g>
+    <text x="16" y="446" font-size="12.5" fill="#1a1a1a">Qwen3.5-122B</text>
+    <rect x="363" y="438" width="37" height="15" fill="#E63946"/>
+    <rect x="400" y="438" width="195" height="15" fill="#2F4858"/>
+    <text x="355" y="450" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">−0.037</text>
+    <text x="602" y="450" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.195</text>
+  </g>
+  <g>
+    <text x="16" y="491" font-size="12.5" fill="#1a1a1a">Qwen3.8</text>
+    <rect x="400" y="483" width="1" height="15" fill="#E63946"/>
+    <rect x="400" y="483" width="4" height="15" fill="#2F4858"/>
+    <text x="330" y="495" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666" text-anchor="end">0.000</text>
+    <text x="411" y="495" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" fill="#666666">+0.004</text>
+  </g>
+</svg>

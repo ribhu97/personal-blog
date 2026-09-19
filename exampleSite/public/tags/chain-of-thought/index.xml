@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Chain-of-Thought on Ribhu&#39;s Blog</title>
+		<link>/tags/chain-of-thought/</link>
+		<description>Recent content in Chain-of-Thought on Ribhu&#39;s Blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="/tags/chain-of-thought/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>When Does Motivated Reasoning Enter the Chain of Thought?</title>
+				<link>/posts/model-forensics/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>/posts/model-forensics/</guid>
+				<description>&lt;style&gt;&#xA;  .post-body svg.mf-inline { max-width: 100%; height: auto; }&#xA;  .post-body figure figcaption { font-size: 0.85rem; font-style: italic; color: var(--muted-color, #888); margin-top: 10px; line-height: 1.5; }&#xA;  .post-body figure figcaption h4 { display: inline; margin: 0; padding: 0; font-size: inherit; font-style: italic; font-weight: 600; color: var(--muted-color, #888); text-transform: none; letter-spacing: 0; font-family: inherit; }&#xA;  .post-body figure figcaption p { display: inline; margin: 0; font-size: inherit; font-style: italic; color: var(--muted-color, #888); }&#xA;  .mf-box { background: var(--base-offset-color, #f4f2ec); border-left: 3px solid var(--highlight-color, #E63946); padding: 18px 24px; margin: 30px 0; }&#xA;  .mf-box h4 { margin: 0 0 12px; padding: 0; font-family: var(--font-family-mono, &#39;JetBrains Mono&#39;, ui-monospace, monospace); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--highlight-color, #E63946); font-weight: 600; }&#xA;  .mf-box p { margin: 0 0 10px; }&#xA;  .mf-box p:last-child, .mf-box ul:last-child { margin-bottom: 0; }&#xA;  .mf-box ul { margin: 0 0 10px; padding-left: 24px; }&#xA;  .mf-box li { margin: 7px 0; }&#xA;  .mf-table-wrap { overflow-x: auto; margin: 32px 0 8px; }&#xA;  .post-body table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }&#xA;  .post-body table th, .post-body table td { padding: 9px 14px; border-bottom: 1px solid var(--hairline-color, #eee); text-align: right; }&#xA;  .post-body table th { font-family: var(--font-family-mono, &#39;JetBrains Mono&#39;, ui-monospace, monospace); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-color, #888); border-bottom: 1.5px solid #d8d8d8; }&#xA;  .post-body table td:first-child { text-align: left; font-weight: 600; }&#xA;  .post-body table td:nth-child(n+2) { font-family: var(--font-family-mono, &#39;JetBrains Mono&#39;, ui-monospace, monospace); font-size: 0.84rem; }&#xA;&lt;/style&gt;&#xA;&lt;p&gt;Over the last few weeks I have gone down many a rabbit hole regarding the whole OpenAI-HuggingFace incident &lt;a href=&#34;youtube.com/watch?v=87dyymv0kcy&#34;&gt;here&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;here&lt;/a&gt;, and &lt;a href=&#34;&#34;&gt;here&lt;/a&gt;. The more I read about it, the more it unsettled me. It honestly felt like reading something out of science fiction, but it was real. Too real in fact. One part that stood out to me was the fact that almost all of the actions it took was done based on its own perceived values. Not reaching out to a human, collaborating, and even sacrificing itself for the greater good (at least in its own &amp;ldquo;head&amp;rdquo;) was really quite fascinating and scary. There is a lot of talk about AI alignment which can be more explicit, in terms of censoring like Anthropic with biological requests, or the kind that I want to talk about that is implicit. The internal bias of the model, which may come from the well known pre-training data. Or it may be emergent based on the post-training that has been conducted on it.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
