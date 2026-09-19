@@ -5,7 +5,6 @@ description: "Ten shipped models, one Fermi question with a donation riding on t
 categories: ["safety", "research"]
 tags: ["mech-interp", "motivated-reasoning", "chain-of-thought", "evals"]
 image: images/mf-hero.svg
-draft: true
 ---
 
 <style>
