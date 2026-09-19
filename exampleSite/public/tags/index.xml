@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Ribhu&#39;s Blog</title>
-		<link>//localhost:1313/tags/</link>
+		<link>/tags/</link>
 		<description>Recent content in Tags on Ribhu&#39;s Blog</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,238 +10,238 @@
 		
 		
 		
-			<lastBuildDate>Sun, 13 Sep 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Chain-of-Thought</title>
-				<link>//localhost:1313/tags/chain-of-thought/</link>
-				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/chain-of-thought/</guid>
+				<link>/tags/chain-of-thought/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/chain-of-thought/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Evals</title>
-				<link>//localhost:1313/tags/evals/</link>
-				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/evals/</guid>
+				<link>/tags/evals/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/evals/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Mech-Interp</title>
-				<link>//localhost:1313/tags/mech-interp/</link>
-				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/mech-interp/</guid>
+				<link>/tags/mech-interp/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/mech-interp/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Motivated-Reasoning</title>
-				<link>//localhost:1313/tags/motivated-reasoning/</link>
-				<pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/motivated-reasoning/</guid>
+				<link>/tags/motivated-reasoning/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/motivated-reasoning/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Art</title>
-				<link>//localhost:1313/tags/art/</link>
+				<link>/tags/art/</link>
 				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/art/</guid>
+				<guid>/tags/art/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Embeddings</title>
-				<link>//localhost:1313/tags/embeddings/</link>
+				<link>/tags/embeddings/</link>
 				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/embeddings/</guid>
+				<guid>/tags/embeddings/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Latent-Space</title>
-				<link>//localhost:1313/tags/latent-space/</link>
+				<link>/tags/latent-space/</link>
 				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/latent-space/</guid>
+				<guid>/tags/latent-space/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Philosophy</title>
-				<link>//localhost:1313/tags/philosophy/</link>
+				<link>/tags/philosophy/</link>
 				<pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/philosophy/</guid>
+				<guid>/tags/philosophy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Benchmarks</title>
-				<link>//localhost:1313/tags/benchmarks/</link>
+				<link>/tags/benchmarks/</link>
 				<pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/benchmarks/</guid>
+				<guid>/tags/benchmarks/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Llm</title>
-				<link>//localhost:1313/tags/llm/</link>
+				<link>/tags/llm/</link>
 				<pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/llm/</guid>
+				<guid>/tags/llm/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ai</title>
-				<link>//localhost:1313/tags/ai/</link>
+				<link>/tags/ai/</link>
 				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/ai/</guid>
+				<guid>/tags/ai/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Edm</title>
-				<link>//localhost:1313/tags/edm/</link>
+				<link>/tags/edm/</link>
 				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/edm/</guid>
+				<guid>/tags/edm/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Edtech</title>
-				<link>//localhost:1313/tags/edtech/</link>
+				<link>/tags/edtech/</link>
 				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/edtech/</guid>
+				<guid>/tags/edtech/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Education</title>
-				<link>//localhost:1313/tags/education/</link>
+				<link>/tags/education/</link>
 				<pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/education/</guid>
+				<guid>/tags/education/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Alignment</title>
-				<link>//localhost:1313/tags/alignment/</link>
+				<link>/tags/alignment/</link>
 				<pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/alignment/</guid>
+				<guid>/tags/alignment/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Deception</title>
-				<link>//localhost:1313/tags/deception/</link>
+				<link>/tags/deception/</link>
 				<pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/deception/</guid>
+				<guid>/tags/deception/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Data-Quality</title>
-				<link>//localhost:1313/tags/data-quality/</link>
+				<link>/tags/data-quality/</link>
 				<pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/data-quality/</guid>
+				<guid>/tags/data-quality/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Scaling-Laws</title>
-				<link>//localhost:1313/tags/scaling-laws/</link>
+				<link>/tags/scaling-laws/</link>
 				<pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/scaling-laws/</guid>
+				<guid>/tags/scaling-laws/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Automation</title>
-				<link>//localhost:1313/tags/automation/</link>
+				<link>/tags/automation/</link>
 				<pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/automation/</guid>
+				<guid>/tags/automation/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Human-Ai-Collaboration</title>
-				<link>//localhost:1313/tags/human-ai-collaboration/</link>
+				<link>/tags/human-ai-collaboration/</link>
 				<pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/human-ai-collaboration/</guid>
+				<guid>/tags/human-ai-collaboration/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Cnn</title>
-				<link>//localhost:1313/tags/cnn/</link>
+				<link>/tags/cnn/</link>
 				<pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/cnn/</guid>
+				<guid>/tags/cnn/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Computer-Vision</title>
-				<link>//localhost:1313/tags/computer-vision/</link>
+				<link>/tags/computer-vision/</link>
 				<pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/computer-vision/</guid>
+				<guid>/tags/computer-vision/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Deep-Learning</title>
-				<link>//localhost:1313/tags/deep-learning/</link>
+				<link>/tags/deep-learning/</link>
 				<pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/deep-learning/</guid>
+				<guid>/tags/deep-learning/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Fate</title>
-				<link>//localhost:1313/tags/fate/</link>
+				<link>/tags/fate/</link>
 				<pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/fate/</guid>
+				<guid>/tags/fate/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Free-Will</title>
-				<link>//localhost:1313/tags/free-will/</link>
+				<link>/tags/free-will/</link>
 				<pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/free-will/</guid>
+				<guid>/tags/free-will/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>American-Exceptionalism</title>
-				<link>//localhost:1313/tags/american-exceptionalism/</link>
+				<link>/tags/american-exceptionalism/</link>
 				<pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/american-exceptionalism/</guid>
+				<guid>/tags/american-exceptionalism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>History</title>
-				<link>//localhost:1313/tags/history/</link>
+				<link>/tags/history/</link>
 				<pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/history/</guid>
+				<guid>/tags/history/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Soccer</title>
-				<link>//localhost:1313/tags/soccer/</link>
+				<link>/tags/soccer/</link>
 				<pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/soccer/</guid>
+				<guid>/tags/soccer/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Turing-Test</title>
-				<link>//localhost:1313/tags/turing-test/</link>
+				<link>/tags/turing-test/</link>
 				<pubDate>Tue, 13 Dec 2016 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/turing-test/</guid>
+				<guid>/tags/turing-test/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Football</title>
-				<link>//localhost:1313/tags/football/</link>
+				<link>/tags/football/</link>
 				<pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/football/</guid>
+				<guid>/tags/football/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Manager</title>
-				<link>//localhost:1313/tags/manager/</link>
+				<link>/tags/manager/</link>
 				<pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/manager/</guid>
+				<guid>/tags/manager/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Manchester-United</title>
-				<link>//localhost:1313/tags/manchester-united/</link>
+				<link>/tags/manchester-united/</link>
 				<pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/manchester-united/</guid>
+				<guid>/tags/manchester-united/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Van-Gaal</title>
-				<link>//localhost:1313/tags/van-gaal/</link>
+				<link>/tags/van-gaal/</link>
 				<pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
-				<guid>//localhost:1313/tags/van-gaal/</guid>
+				<guid>/tags/van-gaal/</guid>
 				<description></description>
 			</item>
 	</channel>

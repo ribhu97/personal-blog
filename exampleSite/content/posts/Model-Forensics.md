@@ -1,6 +1,6 @@
 ---
 title: "When Does Motivated Reasoning Enter the Chain of Thought?"
-date: 2026-09-13
+date: 2026-09-19
 description: "Ten shipped models, one Fermi question with a donation riding on the answer. The incentive-correlated gap between reasoning trajectories can be present at the first estimate, appear only across revisions, or wash out along the way. The locus is different for every family."
 categories: ["safety", "research"]
 tags: ["mech-interp", "motivated-reasoning", "chain-of-thought", "evals"]

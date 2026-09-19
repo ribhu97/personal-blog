@@ -2,172 +2,172 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/chain-of-thought/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/tags/chain-of-thought/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/evals/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/tags/evals/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/mech-interp/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/tags/mech-interp/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/motivated-reasoning/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/tags/motivated-reasoning/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/research/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/categories/research/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/safety/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/categories/safety/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/model-forensics/</loc>
-    <lastmod>2026-09-13T00:00:00+00:00</lastmod>
+    <loc>/posts/model-forensics/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/art/</loc>
+    <loc>/tags/art/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/embeddings/</loc>
+    <loc>/tags/embeddings/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/artaslatestspace/</loc>
+    <loc>/posts/artaslatestspace/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/essays/</loc>
+    <loc>/categories/essays/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/latent-space/</loc>
+    <loc>/tags/latent-space/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/philosophy/</loc>
+    <loc>/tags/philosophy/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/benchmarks/</loc>
+    <loc>/tags/benchmarks/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/llm/</loc>
+    <loc>/tags/llm/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/llm-benchmarks/</loc>
+    <loc>/posts/llm-benchmarks/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/ai/</loc>
+    <loc>/tags/ai/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/educational-data-management/</loc>
+    <loc>/posts/educational-data-management/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/builds/</loc>
+    <loc>/categories/builds/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/edm/</loc>
+    <loc>/tags/edm/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/edtech/</loc>
+    <loc>/tags/edtech/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/education/</loc>
+    <loc>/tags/education/</loc>
     <lastmod>2024-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/alignment/</loc>
+    <loc>/tags/alignment/</loc>
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/deceptiveagents/</loc>
+    <loc>/posts/deceptiveagents/</loc>
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/deception/</loc>
+    <loc>/tags/deception/</loc>
     <lastmod>2024-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/data-quality/</loc>
+    <loc>/tags/data-quality/</loc>
     <lastmod>2024-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/scaling-laws/</loc>
+    <loc>/tags/scaling-laws/</loc>
     <lastmod>2024-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/forgottenlever/</loc>
+    <loc>/posts/forgottenlever/</loc>
     <lastmod>2024-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2019-02-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/automation/</loc>
+    <loc>/tags/automation/</loc>
     <lastmod>2019-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/human-ai-collaboration/</loc>
+    <loc>/tags/human-ai-collaboration/</loc>
     <lastmod>2019-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/human&#43;ai/</loc>
+    <loc>/posts/human&#43;ai/</loc>
     <lastmod>2019-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/cnn/</loc>
+    <loc>/tags/cnn/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/computer-vision/</loc>
+    <loc>/tags/computer-vision/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/deep-learning/</loc>
+    <loc>/tags/deep-learning/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/cnn-intuition/</loc>
+    <loc>/posts/cnn-intuition/</loc>
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/fate/</loc>
+    <loc>/tags/fate/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/free-will/</loc>
+    <loc>/tags/free-will/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/musings-on-fate/</loc>
+    <loc>/posts/musings-on-fate/</loc>
     <lastmod>2017-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/american-exceptionalism/</loc>
+    <loc>/tags/american-exceptionalism/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/history/</loc>
+    <loc>/tags/history/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/soccer/</loc>
+    <loc>/tags/soccer/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/sports/</loc>
+    <loc>/categories/sports/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/usvssoccer/</loc>
+    <loc>/posts/usvssoccer/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/a-robot-philosopher/</loc>
+    <loc>/posts/a-robot-philosopher/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/turing-test/</loc>
+    <loc>/tags/turing-test/</loc>
     <lastmod>2016-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/football/</loc>
+    <loc>/tags/football/</loc>
     <lastmod>2016-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/manager/</loc>
+    <loc>/tags/manager/</loc>
     <lastmod>2016-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/manchester-united/</loc>
+    <loc>/tags/manchester-united/</loc>
     <lastmod>2016-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/van-gaal/</loc>
+    <loc>/tags/van-gaal/</loc>
     <lastmod>2016-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/lvg/</loc>
+    <loc>/posts/lvg/</loc>
     <lastmod>2016-09-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/about/</loc>
   </url><url>
-    <loc>//localhost:1313/pages/</loc>
+    <loc>/pages/</loc>
   </url><url>
-    <loc>//localhost:1313/projects/</loc>
+    <loc>/projects/</loc>
   </url>
 </urlset>
